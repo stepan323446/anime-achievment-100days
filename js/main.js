@@ -20,7 +20,7 @@ const itemsContainer = document.getElementById("challenge-items");
 
 for(let i = 0; i < listItems.length; i++){
     itemsContainer.innerHTML += `
-                <a href="${listItems[i].link}" target="_blank" class="item">
+                <a href="${listItems[i].link}" class="item">
                     <div class="item-img">
                         <img src="${listItems[i].image}" alt="">
                     </div>
