@@ -169,6 +169,15 @@ h1{
     padding: 5px;
     width: 200px;
 }
+footer{
+    background-color: var(--foreground-color);
+    text-align: center;
+    padding: 20px 5px;
+    color: var(--text-color);
+}
+a{
+    color: rgb(61,180,242);
+}
 
 
 @media only screen and (max-width: 590px) {
