@@ -19,6 +19,12 @@ let listItems = [
         link: "https://anilist.co/activity/473416431",
         image: "images/challenge/4.png"
     }
+    ,
+    {
+        title: "Anime you're ashamed you enjoyed",
+        link: "https://anilist.co/activity/473961636",
+        image: "images/challenge/5.jpg"
+    }
 ]
 
 const itemsContainer = document.getElementById("challenge-items");
