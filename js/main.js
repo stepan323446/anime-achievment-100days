@@ -18,12 +18,17 @@ let listItems = [
         title: "Favorite female anime character ever",
         link: "https://anilist.co/activity/473416431",
         image: "images/challenge/4.png"
-    }
-    ,
+    },
     {
         title: "Anime you're ashamed you enjoyed",
         link: "https://anilist.co/activity/473961636",
         image: "images/challenge/5.jpg"
+    }
+    ,
+    {
+        title: "Anime you want to see but haven't yet",
+        link: "https://anilist.co/activity/474424506",
+        image: "images/challenge/6.jpg"
     }
 ]
 
