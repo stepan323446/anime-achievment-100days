@@ -30,6 +30,7 @@ header
     background-color: var(--foreground-color);
     width: 100%;
     border-bottom: 3px solid rgb(31, 41, 55);
+    z-index: 999;
 }
 .container{
     max-width: 1200px;
