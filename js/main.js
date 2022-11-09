@@ -30,6 +30,12 @@ let listItems = [
         link: "https://anilist.co/activity/474424506",
         image: "images/challenge/6.jpg"
     }
+    ,
+    {
+        title: "Your anime crush",
+        link: "https://anilist.co/activity/474806357",
+        image: "images/challenge/NO.jpg"
+    }
 ]
 
 const itemsContainer = document.getElementById("challenge-items");
