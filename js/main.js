@@ -36,6 +36,12 @@ let listItems = [
         link: "https://anilist.co/activity/474806357",
         image: "images/challenge/NO.jpg"
     }
+    ,
+    {
+        title: "Favorite anime couple",
+        link: "https://anilist.co/activity/475161889",
+        image: "images/challenge/7.webp"
+    }
 ]
 
 const itemsContainer = document.getElementById("challenge-items");
