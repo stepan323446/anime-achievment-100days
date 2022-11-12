@@ -45,6 +45,11 @@ let listItems = [
         title: "Best Anime Villian",
         link: "https://anilist.co/activity/475633964",
         image: "images/challenge/9.png"
+    },
+    {
+        title: "Favorite fighter anime",
+        link: "https://anilist.co/activity/476003786",
+        image: "images/challenge/10.jpg"
     }
 ]
 
