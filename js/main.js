@@ -50,6 +50,11 @@ let listItems = [
         title: "Favorite fighter anime",
         link: "https://anilist.co/activity/476003786",
         image: "images/challenge/10.jpg"
+    },
+    {
+        title: "Favorite mech anime",
+        link: "https://anilist.co/activity/476382784",
+        image: "images/challenge/11.jpg"
     }
 ]
 
