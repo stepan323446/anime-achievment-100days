@@ -89,6 +89,19 @@ h1{
 #challenge-items{
     margin-top: 40px;
 }
+#challenge-items .item,
+#challenge-items .hr-block{
+    display: flex;
+}
+#challenge-items .hr-block{
+    position: relative;
+    height: 1px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.181);
+
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
 #challenge-items .item{
     position: relative;
     display: flex;
@@ -178,6 +191,26 @@ footer{
 }
 a{
     color: rgb(61,180,242);
+}
+#challenge-items .hr-block div{
+    position: absolute;
+    display: block;
+
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+
+    color: rgba(255, 255, 255, 0.238);
+    border: 1px solid rgba(255, 255, 255, 0.181);
+    border-radius: 3px;
+    background-color: var(--block-color);
+    font-weight: 600;
+
+    padding: 5px 30px;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
