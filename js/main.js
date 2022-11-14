@@ -56,6 +56,12 @@ let listItems = [
         link: "https://anilist.co/activity/476382784",
         image: "images/challenge/11.jpg"
     }
+    ,
+    {
+        title: "Saddest anime scene",
+        link: "https://anilist.co/activity/476902666",
+        image: "images/challenge/12.jpg"
+    }
 ]
 
 const itemsContainer = document.getElementById("challenge-items");
