@@ -66,6 +66,11 @@ let listItems = [
         title: "Anime character you most similar to",
         link: "https://anilist.co/activity/477263410",
         image: "images/challenge/13.png"
+    },
+    {
+        title: "Saddest Anime Death",
+        link: "https://anilist.co/activity/477793706",
+        image: "images/challenge/14.jpg"
     }
 ]
 
