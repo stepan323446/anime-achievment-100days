@@ -71,6 +71,11 @@ let listItems = [
         title: "Saddest Anime Death",
         link: "https://anilist.co/activity/477793706",
         image: "images/challenge/14.jpg"
+    },
+    {
+        title: "Favorite Animal sidekick, pet or summoning from any anime",
+        link: "https://anilist.co/activity/478226027",
+        image: "images/challenge/15.jpg"
     }
 ]
 
