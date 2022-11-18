@@ -76,6 +76,11 @@ let listItems = [
         title: "Favorite Animal sidekick, pet or summoning from any anime",
         link: "https://anilist.co/activity/478226027",
         image: "images/challenge/15.jpg"
+    },
+    {
+        title: "Anime with the best animation",
+        link: "https://anilist.co/activity/478557312",
+        image: "images/challenge/16.jpg"
     }
 ]
 
