@@ -81,6 +81,11 @@ let listItems = [
         title: "Anime with the best animation",
         link: "https://anilist.co/activity/478557312",
         image: "images/challenge/16.jpg"
+    },
+    {
+        title: "Favorite supporting male anime character",
+        link: "https://anilist.co/activity/478942417",
+        image: "images/challenge/17.png"
     }
 ]
 
