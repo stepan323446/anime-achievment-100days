@@ -86,6 +86,11 @@ let listItems = [
         title: "Favorite supporting male anime character",
         link: "https://anilist.co/activity/478942417",
         image: "images/challenge/17.png"
+    },
+    {
+        title: "Favorite supporting female anime character",
+        link: "https://anilist.co/activity/479324943",
+        image: "images/challenge/18.png"
     }
 ]
 
