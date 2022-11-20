@@ -7,6 +7,7 @@
 {
     --foreground-color: rgb(21, 31, 46);
     --block-color: #152232;
+    --block-color-hover: #27415e;
     --text-color: rgb(159,173,189);
 }
 body{
@@ -213,7 +214,74 @@ a{
     transform: translate(-50%, -50%);
 }
 
+.blocks{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    margin-top: 26px;
+}
+h2{
+    color: rgba(255, 255, 255, 0.711);
+    font-size: 24px;
+    font-family: 'Secular One', sans-serif;
+}
+input{
+    background-color: var(--block-color);
+    color: #fff;
+    border: 0;
+    font-size: 14px;
+    border-radius: 3px;
+    padding: 10px 15px;
+    width: 100%;
+    
+    transition: 0.15s ease;
+}
+input::placeholder{
+    color: rgb(220, 220, 220);
+}
+input:focus{
+    outline: none;
+    background-color: var(--block-color-hover);
+}
+.subtext-input{
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.411);
+    line-height: 14px;
+    margin-top: 4px;
+    margin-left: 10px;
+}
+.hide{
+    display: none !important;
+}
+.select{
+    display: inline-block;
+    background-color: var(--block-color);
+    padding: 10px 15px;
+    color: rgb(220, 220, 220);
+    border-radius: 3px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 
+    cursor: pointer;
+    user-select: none;
+    transition: 0.15s ease
+}
+.select:hover,
+.select.selected{
+    background-color: var(--block-color-hover);
+}
+#nothing-text{
+    color: #adadad;
+    line-height: 24px;
+    padding: 30px 10px;
+    text-align: center;
+}
+@media only screen and (max-width: 600px){
+    .blocks{
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+}
 @media only screen and (max-width: 590px) {
     h1{
         text-align: center;
