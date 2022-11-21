@@ -91,6 +91,11 @@ let listItems = [
         title: "Favorite supporting female anime character",
         link: "https://anilist.co/activity/479324943",
         image: "images/challenge/18.png"
+    },
+    {
+        title: "Most epic scene ever",
+        link: "https://anilist.co/activity/479714389",
+        image: "images/challenge/19.jpg"
     }
 ]
 
