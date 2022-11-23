@@ -101,6 +101,11 @@ let listItems = [
         title: "Anime character that gets on your nervers",
         link: "https://anilist.co/activity/480327407",
         image: "images/challenge/20.jpg"
+    },
+    {
+        title: "Favorite goofy anime character",
+        link: "https://anilist.co/activity/480610555",
+        image: "images/challenge/21.png"
     }
 ]
 
