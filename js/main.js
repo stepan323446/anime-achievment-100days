@@ -96,6 +96,11 @@ let listItems = [
         title: "Most epic scene ever",
         link: "https://anilist.co/activity/479714389",
         image: "images/challenge/19.jpg"
+    },
+    {
+        title: "Anime character that gets on your nervers",
+        link: "https://anilist.co/activity/480327407",
+        image: "images/challenge/20.jpg"
     }
 ]
 
