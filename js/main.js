@@ -106,6 +106,11 @@ let listItems = [
         title: "Favorite goofy anime character",
         link: "https://anilist.co/activity/480610555",
         image: "images/challenge/21.png"
+    },
+    {
+        title: "Favorite weapon, gear or armor used in an anime",
+        link: "https://anilist.co/activity/480996817",
+        image: "images/challenge/22.jpg"
     }
 ]
 
