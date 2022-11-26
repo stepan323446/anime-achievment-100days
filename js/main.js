@@ -116,6 +116,11 @@ let listItems = [
         title: "Favorite attack someone used in an anime",
         link: "https://anilist.co/activity/481409842",
         image: "images/challenge/22.jpg"
+    },
+    {
+        title: "Moment that shoked you the most in any anime",
+        link: "https://anilist.co/activity/481687733",
+        image: "images/challenge/24.png"
     }
 ]
 
