@@ -292,6 +292,9 @@ input:focus{
     outline: none;
     background-color: var(--block-color-hover);
 }
+h2{
+    margin-top: 30px;
+}
 .subtext-input{
     font-size: 10px;
     color: rgba(255, 255, 255, 0.411);
@@ -330,6 +333,41 @@ input:focus{
     padding: 30px 10px;
     text-align: center;
 }
+
+#other-users{
+    margin-top: 20px;
+}
+.user{
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--block-color);
+    color: var(--text-color);
+    text-decoration: none;
+    margin-right: 5px;
+    margin-bottom: 5px;
+
+    border-radius: 3px;
+    overflow: hidden;
+
+    transition: 0.15s ease;
+}
+.user-img{
+    width: 32px;
+    height: 32px;
+}
+.user-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.user-nickname{
+    padding: 0 10px;
+    white-space: nowrap;
+}
+.user:hover{
+    background-color: var(--block-color-hover);
+}
+
 @media only screen and (max-width: 600px){
     .blocks{
         -ms-grid-columns: 1fr;

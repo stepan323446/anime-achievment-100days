@@ -1,3 +1,25 @@
+let otherUsers = [
+    {
+        nickname: "CH1KIM0N1",
+        image: "images/users/CH1KIM0N1.png",
+        url: "https://ch1kim0n1.github.io/100DayChallenge_ch1kim0n1.github.io/"
+    }
+]
+
+let usersContent = document.getElementById("other-users");
+otherUsers.forEach(user => {
+    usersContent.innerHTML += `
+    <a href="${user.url}" target="_blank" class="user">
+        <div class="user-img">
+            <img src="${user.image}" alt="${user.nickname}">
+        </div>
+        <div class="user-nickname">
+            ${user.nickname}
+        </div>
+    </a>
+    `;
+});
+
 let listItems = [
     {
         title: "Very first anime you watched",
