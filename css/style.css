@@ -338,6 +338,7 @@ h2{
     margin-top: 20px;
 }
 .user{
+    position: relative;
     display: inline-flex;
     align-items: center;
     background-color: var(--block-color);
@@ -347,13 +348,16 @@ h2{
     margin-bottom: 5px;
 
     border-radius: 3px;
-    overflow: hidden;
+    
 
     transition: 0.15s ease;
 }
 .user-img{
     width: 32px;
     height: 32px;
+
+    border-radius: 3px;
+    overflow: hidden;
 }
 .user-img img{
     width: 100%;
@@ -366,6 +370,32 @@ h2{
 }
 .user:hover{
     background-color: var(--block-color-hover);
+}
+.user::after{
+    content: 'test';
+    position: absolute;
+
+    font-size: 10px;
+    color: #fff;
+
+    right: 0px;
+    top: -6px;
+
+    padding: 1px 3px;
+    border-radius: 2px;
+    background-color: #adadad;
+}
+.user.complete::after{
+    content: 'Completed';
+    background-color: rgb(7, 148, 0);
+}
+.user.current::after{
+    content: 'Current';
+    background-color: rgb(0, 35, 148);
+}
+.user.failed::after{
+    content: 'Failed';
+    background-color: rgb(148, 0, 0);
 }
 
 @media only screen and (max-width: 600px){

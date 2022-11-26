@@ -1,15 +1,52 @@
+// Другие пользователи
+const Status = {
+	Complete: "complete",
+	Current: "current",
+	Failed: "failed"
+}
 let otherUsers = [
+    {
+        nickname: "GHAUR1",
+        image: "images/users/Ghaur1.png",
+        url: "https://anilist.co/activity/474754966",
+        status: Status.Complete
+    },
     {
         nickname: "CH1KIM0N1",
         image: "images/users/CH1KIM0N1.png",
-        url: "https://ch1kim0n1.github.io/100DayChallenge_ch1kim0n1.github.io/"
+        url: "https://ch1kim0n1.github.io/100DayChallenge_ch1kim0n1.github.io/",
+        status: Status.Current
+    },
+    {
+        nickname: "GreenDavid004",
+        image: "images/users/david.jpg",
+        url: "https://anilist.co/user/GreenDavid004/",
+        status: Status.Current
+    },
+    {
+        nickname: "Ani-Dotes",
+        image: "images/users/dotes.jpg",
+        url: "https://anidotesblog.wordpress.com/100-day-anime-challenge/",
+        status: Status.Failed
+    },
+    {
+        nickname: "Celestial Sparkles",
+        image: "images/users/CelestialSparkles.png",
+        url: "https://howanimestuffworks176744600.wordpress.com/category/anime-challenges-events/100-days-of-anime-challenge/",
+        status: Status.Failed
+    },
+    {
+        nickname: "Karandi",
+        image: "images/users/Karandi.webp",
+        url: "https://100wordanime.blog/category/30-day-anime-challenge/",
+        status: Status.Failed
     }
 ]
 
 let usersContent = document.getElementById("other-users");
 otherUsers.forEach(user => {
     usersContent.innerHTML += `
-    <a href="${user.url}" target="_blank" class="user">
+    <a href="${user.url}" target="_blank" class="user ${user.status}">
         <div class="user-img">
             <img src="${user.image}" alt="${user.nickname}">
         </div>
@@ -20,6 +57,7 @@ otherUsers.forEach(user => {
     `;
 });
 
+// Мой список
 let listItems = [
     {
         title: "Very first anime you watched",
