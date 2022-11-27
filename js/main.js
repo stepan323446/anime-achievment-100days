@@ -12,6 +12,12 @@ let otherUsers = [
         status: Status.Complete
     },
     {
+        nickname: "OskarL",
+        image: "images/users/OskarL.jpg",
+        url: "https://anilist.co/activity/478516794",
+        status: Status.Complete
+    },
+    {
         nickname: "CH1KIM0N1",
         image: "images/users/CH1KIM0N1.png",
         url: "https://ch1kim0n1.github.io/100DayChallenge_ch1kim0n1.github.io/",
@@ -181,6 +187,11 @@ let listItems = [
         title: "Moment that shoked you the most in any anime",
         link: "https://anilist.co/activity/481687733",
         image: "images/challenge/24.png"
+    },
+    {
+        title: "Anime that never gets old no matter how many times you've rewatched it",
+        link: "https://anilist.co/activity/481687733",
+        image: "images/challenge/22.jpg"
     }
 ]
 
