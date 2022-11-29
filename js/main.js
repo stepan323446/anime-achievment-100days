@@ -69,10 +69,12 @@ otherUsers.forEach(user => {
 class Title{
     id;
     title;
+    count;
 
     constructor(id, title){
         this.id = id;
         this.title = title;
+        this.count = 0;
     }
 }
 let listTitles = [
@@ -381,6 +383,70 @@ daysSelectBtns.forEach(btn => {
             isActiveNothing(false);
     });
 });
+
+// Статистика по тайтлам
+//////////////////////////////////////////////////////
+// Сбор данных со всех списков
+let allTitlesCount = 0;
+listItems.forEach(item => {
+    if(item.content != undefined){
+        item.content.forEach(id => {
+            listTitles[id].count += 1;
+            allTitlesCount += 1;
+        });
+    }
+});
+
+// Сортировка
+listTitles.sort(compareTitlesCount);
+function compareTitlesCount(title1, title2) {
+    if(title1.count > title2.count){
+        return -1;
+    }
+    if(title1.count < title2.count){
+        return 1;
+    }
+    return 0;
+}
+
+// Рисунок графика и к нему текста
+let statsGraphElem = document.getElementById("stats-number__graph");
+let statsGraphText = document.getElementById("stats-number__text");
+
+listSort = [
+    {
+        index: 0,
+        color: "#f85050"
+    },
+    {
+        index: 1,
+        color: "#85ff76"
+    },
+    {
+        index: 2,
+        color: "#3b59ff"
+    },
+    {
+        index: 3,
+        color: "#6300b3"
+    },
+    {
+        index: 4,
+        color: "#900011"
+    }
+]
+let procLeft = 100;
+listSort.forEach(element => {
+    let proc = listTitles[element.index].count * 100 / allTitlesCount;
+    procLeft -= proc;
+
+    elemTextStat(listTitles[element.index].title, element.color, proc);
+});
+elemTextStat("Others", "#5c5c5c", procLeft);
+function elemTextStat(name, color, proc) {
+    statsGraphElem.innerHTML += `<span style="background: ${color}; width: ${proc}%"></span>`
+    statsGraphText.innerHTML += `<div class="item-stat"><span style="background: ${color}"></span>${proc.toFixed(1)}% - ${name}</div>`;
+}
 
 // Включить / Выключить разделительные блоки
 function isActiveHrBlocks(isActive){
