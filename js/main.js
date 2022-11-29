@@ -257,6 +257,12 @@ let listItems = [
         link: "https://anilist.co/activity/482715319",
         image: "images/challenge/19.jpg",
         content: [16]
+    },
+    {
+        title: "Most Badass Scene from Any Anime Character",
+        link: "https://anilist.co/activity/483190778",
+        image: "images/challenge/27.jpg",
+        content: [18]
     }
 ]
 
