@@ -1,4 +1,5 @@
 // ПОДКЛЮЧЕНИЕ СПИСОКОВ ЧЕРЕЗ DATA.JS В INDEX.HTML
+let stevedekart = getDataSteve();
 let otherUsers = stevedekart.otherUsers;
 let listTitles = stevedekart.listTitles;
 let listItems = stevedekart.listItems;
