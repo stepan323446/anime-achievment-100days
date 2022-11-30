@@ -1,4 +1,7 @@
 // ПОДКЛЮЧЕНИЕ СПИСОКОВ ЧЕРЕЗ DATA.JS В INDEX.HTML
+let otherUsers = stevedekart.otherUsers;
+let listTitles = stevedekart.listTitles;
+let listItems = stevedekart.listItems;
 
 // Добавление сторонних пользователей
 let usersContent = document.getElementById("other-users");
@@ -155,7 +158,6 @@ function compareTitlesCount(title1, title2) {
     }
     return 0;
 }
-console.log(listTitles);
 
 // Рисунок графика и к нему текста
 let statsGraphElem = document.getElementById("stats-number__graph");
