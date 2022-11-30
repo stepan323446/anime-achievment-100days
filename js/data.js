@@ -242,7 +242,7 @@ function getDataSteve() {
                 title: "Anime that never gets old no matter how many times you've rewatched it",
                 link: "https://anilist.co/activity/482325002",
                 image: "images/challenge/22.jpg",
-                content: [0, 18, 5, 10]
+                content: [0, 18, 5, 10, 9]
             },
             {
                 title: "Best anime fight",
@@ -255,6 +255,12 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/483190778",
                 image: "images/challenge/27.jpg",
                 content: [18]
+            },
+            {
+                title: "Favorite quote from any anime character",
+                link: "https://anilist.co/activity/483190778",
+                image: "images/challenge/22.jpg",
+                content: [0]
             }
         ]
 
