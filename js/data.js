@@ -258,7 +258,7 @@ function getDataSteve() {
             },
             {
                 title: "Favorite quote from any anime character",
-                link: "https://anilist.co/activity/483190778",
+                link: "https://anilist.co/activity/483541396",
                 image: "images/challenge/22.jpg",
                 content: [0]
             }
