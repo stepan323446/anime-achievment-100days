@@ -261,6 +261,12 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/483541396",
                 image: "images/challenge/22.jpg",
                 content: [0]
+            },
+            {
+                title: "An anime you wished was real",
+                link: "https://anilist.co/activity/483916617",
+                image: "images/challenge/yona.webp",
+                content: [5, 9]
             }
         ]
 
