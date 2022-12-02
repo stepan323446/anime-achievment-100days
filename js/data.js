@@ -272,7 +272,7 @@ function getDataSteve() {
                 title: "An Anime You Wished Never Ended and Continued On",
                 link: "https://anilist.co/activity/484253057",
                 image: "images/challenge/27.jpg",
-                content: [5, 9]
+                content: [18]
             }
         ]
 
