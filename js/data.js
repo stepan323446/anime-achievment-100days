@@ -267,6 +267,12 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/483916617",
                 image: "images/challenge/yona.webp",
                 content: [5, 9]
+            },
+            {
+                title: "An Anime You Wished Never Ended and Continued On",
+                link: "https://anilist.co/activity/484253057",
+                image: "images/challenge/27.jpg",
+                content: [5, 9]
             }
         ]
 
