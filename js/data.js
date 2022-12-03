@@ -87,6 +87,7 @@ function getDataSteve() {
             new Title(16, "Demon Slayer: Kimetsu no Yaiba"),
             new Title(17, "ERASED"),
             new Title(18, "No Game, No Life"),
+            new Title(19, "Toradora!")
         ],
 
         // Мой список
@@ -273,6 +274,12 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/484253057",
                 image: "images/challenge/27.jpg",
                 content: [18]
+            },
+            {
+                title: "Favorite anime OP",
+                link: "https://anilist.co/activity/484759398",
+                image: "images/challenge/toradora.jpg",
+                content: [0, 19]
             }
         ]
 
