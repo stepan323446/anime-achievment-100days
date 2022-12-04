@@ -280,6 +280,12 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/484759398",
                 image: "images/challenge/toradora.jpg",
                 content: [0, 19]
+            },
+            {
+                title: "Which Anime Character would I want to be as best friend",
+                link: "https://anilist.co/activity/485109068",
+                image: "images/challenge/Vladilena.png",
+                content: [4, 19]
             }
         ]
 
