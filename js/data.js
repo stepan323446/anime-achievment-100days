@@ -286,6 +286,12 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/485109068",
                 image: "images/challenge/Vladilena.png",
                 content: [4, 19]
+            },
+            {
+                title: "Anime Character I Would Like to Cosplay As",
+                link: "https://anilist.co/activity/485634245",
+                image: "images/challenge/shinei-86.webp",
+                content: [4]
             }
         ]
 
