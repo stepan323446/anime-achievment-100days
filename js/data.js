@@ -87,7 +87,8 @@ function getDataSteve() {
             new Title(16, "Demon Slayer: Kimetsu no Yaiba"),
             new Title(17, "ERASED"),
             new Title(18, "No Game, No Life"),
-            new Title(19, "Toradora!")
+            new Title(19, "Toradora!"),
+            new Title(20, "!_NO ANSWER FOR THIS QUESTION_!"),
         ],
 
         // Мой список
@@ -135,6 +136,7 @@ function getDataSteve() {
                 title: "Your anime crush",
                 link: "https://anilist.co/activity/474806357",
                 image: "images/challenge/NO.jpg",
+                content: [20]
             },
             {
                 title: "Favorite anime couple",
@@ -292,6 +294,12 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/485634245",
                 image: "images/challenge/shinei-86.webp",
                 content: [4]
+            },
+            {
+                title: "What Anime Character Would be my Workout Buddy",
+                link: "https://anilist.co/activity/486155884",
+                image: "images/challenge/NO.jpg",
+                content: [20]
             }
         ]
 
