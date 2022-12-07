@@ -300,6 +300,12 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/486155884",
                 image: "images/challenge/NO.jpg",
                 content: [20]
+            },
+            {
+                title: "What Crossover I Would Like to See",
+                link: "https://anilist.co/activity/486588791",
+                image: "images/challenge/10.jpg",
+                content: [10, 4]
             }
         ]
 
