@@ -89,6 +89,7 @@ function getDataSteve() {
             new Title(18, "No Game, No Life"),
             new Title(19, "Toradora!"),
             new Title(20, "!_NO ANSWER FOR THIS QUESTION_!"),
+            new Title(21, "Darling in the Franxx"),
         ],
 
         // Мой список
@@ -306,6 +307,12 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/486588791",
                 image: "images/challenge/10.jpg",
                 content: [10, 4]
+            },
+            {
+                title: "My first anime crush",
+                link: "https://anilist.co/activity/486898673",
+                image: "images/challenge/zero_two.jpg",
+                content: [21]
             }
         ]
 
