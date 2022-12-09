@@ -313,6 +313,12 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/486898673",
                 image: "images/challenge/zero_two.jpg",
                 content: [21]
+            },
+            {
+                title: "Anime that changed you",
+                link: "https://anilist.co/activity/486898673",
+                image: "images/challenge/darlinginthefraxx.jpg",
+                content: [21]
             }
         ]
 
