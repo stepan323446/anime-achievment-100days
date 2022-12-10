@@ -90,6 +90,7 @@ function getDataSteve() {
             new Title(19, "Toradora!"),
             new Title(20, "!_NO ANSWER FOR THIS QUESTION_!"),
             new Title(21, "Darling in the Franxx"),
+            new Title(22, "BOCCHI THE ROCK!")
         ],
 
         // Мой список
@@ -317,9 +318,15 @@ function getDataSteve() {
             },
             {
                 title: "Anime that changed you",
-                link: "https://anilist.co/activity/486898673",
+                link: "https://anilist.co/activity/487293734",
                 image: "images/challenge/darlinginthefraxx.jpg",
                 content: [21]
+            },
+            {
+                title: "Do you like yaoi and/or yuri",
+                link: "https://anilist.co/activity/487568720",
+                image: "images/challenge/bocchitherock.jpg",
+                content: [22]
             }
         ]
 
