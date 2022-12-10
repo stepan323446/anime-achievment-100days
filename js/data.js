@@ -324,7 +324,7 @@ function getDataSteve() {
             },
             {
                 title: "Do you like yaoi and/or yuri",
-                link: "https://anilist.co/activity/487568720",
+                link: "https://anilist.co/activity/487701683",
                 image: "images/challenge/bocchitherock.jpg",
                 content: [22]
             }
