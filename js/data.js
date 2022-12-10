@@ -99,7 +99,8 @@ function getDataSteve() {
                 title: "Very first anime you watched",
                 link: "https://anilist.co/activity/472252544",
                 image: "images/challenge/1.jpg",
-                content: [1]
+                content: [1],
+                addSortTag: "xfsxasf" // Проверка, добавляет доп. условия поиска
             },
             {
                 title: "Favorite anime you've watched so far",
@@ -309,7 +310,7 @@ function getDataSteve() {
                 content: [10, 4]
             },
             {
-                title: "My first anime crush",
+                title: "Your first anime crush",
                 link: "https://anilist.co/activity/486898673",
                 image: "images/challenge/zero_two.jpg",
                 content: [21]

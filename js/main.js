@@ -45,12 +45,25 @@ for(let i = 0; i < listItems.length; i++){
                     </div>
                     <span>${i + 1} Day</span>
     `
+    let sortTagsText = "";
+    if(listItems[i].addSortTag != undefined)
+        sortTagsText += listItems[i].addSortTag;
+
+    let sortTitleText = "";
+    if(listItems[i].content != undefined){
+        listItems[i].content.forEach(titleID => {
+            sortTitleText += listTitles[titleID].title + ", ";
+        });
+    }
+    sortTitleText = sortTitleText.toLowerCase();
+
     items.push({
         elem: item,
-        searchText: `${listItems[i].title.toLowerCase()} - ${i + 1} day`,
+        searchText: `${listItems[i].title.toLowerCase()} - ${i + 1} day - ${sortTagsText} - ${sortTitleText}`,
         day: i + 1,
         contentIDs: listItems[i].content
     });
+    console.log(items[i].searchText)
     itemsContainer.append(item);
 }
 
@@ -62,7 +75,7 @@ searchInput.addEventListener("input", function(e){
     daysSelectBtns.forEach(btn => {
         btn.classList.remove("selected");
     });
-    daysSelectBtns[0].classList.add("selected");
+    
 
     // Поиск
     let value = e.currentTarget.value.toLowerCase();
@@ -73,6 +86,8 @@ searchInput.addEventListener("input", function(e){
         });
         isActiveHrBlocks(true);
         isActiveNothing(false);
+        daysSelectBtns[0].classList.add("selected");
+        
         return;
     }
     isActiveHrBlocks(false);
@@ -198,24 +213,47 @@ listSort.forEach(element => {
     // Отметить тайтл уже как видимый для пользователя в статистике
     listTitles[element.index].isShowing = true;
 });
-// Кнопка "Другие", которая при клике показывает все тайтлы
-elemTextStat("Others", "#5c5c5c", procLeft, function(e){
-    listTitles.forEach(element => {
-        // Если элемент ещё не показан, значит его показывать после клика в статистике
-        if(element.isShowing == false){
-            // Опять высчитываем проценты
-            let proc = element.count * 100 / allTitlesCount;
-            // Создаём кнопку с теми же функциями, что и основную
-            elemTextStat(element.title, "#5c5c5c", proc, function(e){
-                showItemsWithTitle(element.id);
-                element.isShowing = true;
-            });
-        }
-    });
 
-    // Удалить кнопку "Others", т.к. она уже не нужна
-    e.currentTarget.remove();
-});
+// Кнопка "Другие", которая при клике показывает все тайтлы
+othersBtn();
+
+function othersBtn() {
+    elemTextStat("Others", "#5c5c5c", procLeft, function(e){
+        let otherTitleBtns = [];
+
+        listTitles.forEach(element => {
+            // Если элемент ещё не показан, значит его показывать после клика в статистике
+            if(element.isShowing == false){
+                // Опять высчитываем проценты
+                let proc = element.count * 100 / allTitlesCount;
+                // Создаём кнопку с теми же функциями, что и основную
+                otherTitleBtns.push(elemTextStat(element.title, "#5c5c5c", proc, function(e){
+                    showItemsWithTitle(element.id);
+                }));
+            }
+        });
+        // Удалить кнопку "Others", т.к. она уже не нужна
+        e.currentTarget.remove();
+
+        // Добавить кнопку "Скрыть" для открытого уже списка
+        let closeOthersBtn = document.createElement("a");
+        closeOthersBtn.setAttribute("href", "#")
+        closeOthersBtn.classList.add("btn");
+        closeOthersBtn.textContent = "Hide";
+
+        closeOthersBtn.addEventListener("click", function(e){
+            e.preventDefault();
+            otherTitleBtns.forEach(element => {
+                element.remove();
+            });
+            othersBtn();
+            e.currentTarget.remove();
+            window.open("#other-users", "_self");
+        })
+        statsGraphText.append(closeOthersBtn);
+    });
+}
+
 
 // Показать в списке вопросов дня только те, что содержат индекс тайтла
 function showItemsWithTitle(indexTitle){
@@ -245,8 +283,8 @@ function elemTextStat(name, color, proc, funcClick) {
     elem.innerHTML = `<span style="background: ${color}"></span><div class="text">${proc.toFixed(1)}% — ${name}</div>`;
 
     elem.addEventListener("click", funcClick);
-
     statsGraphText.append(elem);
+    return elem;
 }
 
 //////////////////////////////////////////////////////

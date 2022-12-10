@@ -446,6 +446,28 @@ h2{
     height: 4px;
     background-color: rgb(61,180,242);
 }
+.btn{
+    display: inline-block;
+    background-color: var(--block-color);
+    padding: 10px 15px;
+    color: rgb(220, 220, 220);
+    border-radius: 3px;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: 0.15s ease;
+    -o-transition: 0.15s ease;
+    transition: 0.15s ease;
+}
+.btn:hover{
+    background-color: var(--block-color-hover);
+}
+#stats-number__text .btn{
+    margin-top: 14px;
+}
 
 @media only screen and (max-width: 600px){
     .blocks{
