@@ -90,7 +90,10 @@ function getDataSteve() {
             new Title(19, "Toradora!"),
             new Title(20, "!_NO ANSWER FOR THIS QUESTION_!"),
             new Title(21, "Darling in the Franxx"),
-            new Title(22, "BOCCHI THE ROCK!")
+            new Title(22, "BOCCHI THE ROCK!"),
+            new Title(23, "Lycoris Recoil"),
+            new Title(24, "Domestic Girlfriend"),
+            new Title(25, "Your lie in April")
         ],
 
         // Мой список
@@ -327,6 +330,12 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/487701683",
                 image: "images/challenge/bocchitherock.jpg",
                 content: [22]
+            },
+            {
+                title: "Favorite music in anime",
+                link: "https://anilist.co/activity/488090868",
+                image: "images/challenge/11.jpg",
+                content: [4, 23, 24, 25]
             }
         ]
 
