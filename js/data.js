@@ -93,7 +93,8 @@ function getDataSteve() {
             new Title(22, "BOCCHI THE ROCK!"),
             new Title(23, "Lycoris Recoil"),
             new Title(24, "Domestic Girlfriend"),
-            new Title(25, "Your lie in April")
+            new Title(25, "Your lie in April"),
+            new Title(26, "Question not related to a specific title")
         ],
 
         // Мой список
@@ -336,6 +337,13 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/488090868",
                 image: "images/challenge/11.jpg",
                 content: [4, 23, 24, 25]
+            },
+            {
+                title: "Favorite VA/Seiyuu",
+                link: "https://anilist.co/activity/488747187",
+                image: "images/challenge/Sharon.png",
+                content: [26],
+                addSortTag: "favorite voice actor"
             }
         ]
 
