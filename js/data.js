@@ -55,6 +55,12 @@ function getDataSteve() {
                 status: Status.Current
             },
             {
+                nickname: "F41NZ",
+                image: "images/users/F41NZ.jpg",
+                url: "https://anilist.co/user/F41NZ/",
+                status: Status.Current
+            },
+            {
                 nickname: "Ani-Dotes",
                 image: "images/users/dotes.jpg",
                 url: "https://anidotesblog.wordpress.com/100-day-anime-challenge/",
