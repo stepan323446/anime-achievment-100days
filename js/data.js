@@ -94,7 +94,8 @@ function getDataSteve() {
             new Title(23, "Lycoris Recoil"),
             new Title(24, "Domestic Girlfriend"),
             new Title(25, "Your lie in April"),
-            new Title(26, "Question not related to a specific title")
+            new Title(26, "Question not related to a specific title"),
+            new Title(27, "Fate")
         ],
 
         // Мой список
@@ -344,6 +345,12 @@ function getDataSteve() {
                 image: "images/challenge/Sharon.png",
                 content: [26],
                 addSortTag: "favorite voice actor anilibria sharon"
+            },
+            {
+                title: "Anime character you hate",
+                link: "https://anilist.co/activity/489109756",
+                image: "images/challenge/Ryuunosuke.png",
+                content: [27]
             }
         ]
 
