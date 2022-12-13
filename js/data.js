@@ -343,7 +343,7 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/488747187",
                 image: "images/challenge/Sharon.png",
                 content: [26],
-                addSortTag: "favorite voice actor"
+                addSortTag: "favorite voice actor anilibria sharon"
             }
         ]
 
