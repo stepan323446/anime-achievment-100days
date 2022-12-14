@@ -101,7 +101,8 @@ function getDataSteve() {
             new Title(24, "Domestic Girlfriend"),
             new Title(25, "Your lie in April"),
             new Title(26, "Question not related to a specific title"),
-            new Title(27, "Fate")
+            new Title(27, "Fate"),
+            new Title(28, "Classroom of the Elite")
         ],
 
         // Мой список
@@ -357,6 +358,13 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/489109756",
                 image: "images/challenge/Ryuunosuke.png",
                 content: [27]
+            },
+            {
+                title: "Most epic and shocking anime scene ever",
+                link: "https://anilist.co/activity/489602357",
+                image: "images/challenge/classroom.webp",
+                content: [28],
+                addSortTag: "Most epic or shocking anime scene ever"
             }
         ]
 
