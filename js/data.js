@@ -365,6 +365,12 @@ function getDataSteve() {
                 image: "images/challenge/classroom.webp",
                 content: [28],
                 addSortTag: "Most epic or shocking anime scene ever"
+            },
+            {
+                title: "Favorite canon couple",
+                link: "https://anilist.co/activity/489873862",
+                image: "images/challenge/7.webp",
+                content: [5]
             }
         ]
 
