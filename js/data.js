@@ -371,7 +371,13 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/489873862",
                 image: "images/challenge/7.webp",
                 content: [5]
-            }
+            },
+            {
+                title: "Who do you ship?",
+                link: "https://anilist.co/activity/490371040",
+                image: "images/anilist/ayanakodixkei.webp",
+                content: [28]
+            },
         ]
 
     }
