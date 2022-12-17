@@ -102,7 +102,8 @@ function getDataSteve() {
             new Title(25, "Your lie in April"),
             new Title(26, "Question not related to a specific title"),
             new Title(27, "Fate"),
-            new Title(28, "Classroom of the Elite")
+            new Title(28, "Classroom of the Elite"),
+            new Title(29, "Kaguya-sama: Love is War")
         ],
 
         // Мой список
@@ -377,6 +378,12 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/490371040",
                 image: "images/anilist/ayanakodixkei.webp",
                 content: [28]
+            },
+            {
+                title: "Favorite anime ED",
+                link: "https://anilist.co/activity/490617580",
+                image: "images/challenge/kaguya.jpg",
+                content: [29]
             },
         ]
 
