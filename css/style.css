@@ -468,6 +468,25 @@ h2{
 #stats-number__text .btn{
     margin-top: 14px;
 }
+.like-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 23px 5px;
+}
+.like-btn .likebtn-button{
+    background-color: #152232 !important;
+    border: 1px solid rgb(61,180,242) !important;
+}
+.likebtn-label{
+    color: rgb(159,173,189) !important;
+}
+.likebtn-label{
+    color: rgb(159,173,189) !important;
+}
+.lb-style-white .lb-a:hover .lb-like-label, .lb-style-white .lb-a:hover .lb-dislike-label, .lb-style-padded .lb-a:hover .lb-like-label, .lb-style-padded .lb-a:hover .lb-dislike-label, .lb-style-drop .lb-a:hover .lb-like-label, .lb-style-drop .lb-a:hover .lb-dislike-label{
+    color: #fff !important;
+}
 
 @media only screen and (max-width: 600px){
     .blocks{
