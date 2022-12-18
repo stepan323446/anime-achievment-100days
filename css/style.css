@@ -481,6 +481,14 @@ h2{
     background-color: #152232 !important;
     border: 1px solid rgb(61,180,242) !important;
     padding: 0px !important;
+
+    display: flex;
+    align-items: center;
+
+    transition: 0.15s ease;
+}
+.like-btn .likebtn-button:hover{
+    background-color: rgb(61,180,242) !important;
 }
 .lb-like{
     height: auto !important;
@@ -494,6 +502,16 @@ h2{
     display: block !important;
     padding: 4px 20px !important;
     box-sizing: border-box !important;
+    transition: 0.15s ease;
+}
+.lb-count{
+    color: rgb(159,173,189) !important;
+    font-size: 14px !important;
+
+    transition: 0.15s ease;
+}
+.like-btn .likebtn-button:hover .lb-count{
+    color: rgb(255, 255, 255) !important;
 }
 .lb-style-white .lb-a:hover .lb-like-label, .lb-style-white .lb-a:hover .lb-dislike-label, .lb-style-padded .lb-a:hover .lb-like-label, .lb-style-padded .lb-a:hover .lb-dislike-label, .lb-style-drop .lb-a:hover .lb-like-label, .lb-style-drop .lb-a:hover .lb-dislike-label{
     color: #fff !important;
