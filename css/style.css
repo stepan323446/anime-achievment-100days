@@ -474,12 +474,20 @@ h2{
     justify-content: center;
     margin: 23px 5px;
 }
+.ikebtn-icon{
+    display: none !important;
+}
 .like-btn .likebtn-button{
     background-color: #152232 !important;
     border: 1px solid rgb(61,180,242) !important;
+    padding: 5px 10px !important;
 }
 .likebtn-label{
     color: rgb(159,173,189) !important;
+    font-size: 30px !important;
+    font-family: 'Montserrat', sans-serif !important; 
+    font-weight: 600 !important;
+    padding: 0 14px !important;
 }
 .likebtn-label{
     color: rgb(159,173,189) !important;
