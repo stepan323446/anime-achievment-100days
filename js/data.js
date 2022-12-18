@@ -385,6 +385,12 @@ function getDataSteve() {
                 image: "images/challenge/kaguya.jpg",
                 content: [29]
             },
+            {
+                title: "Guys, what's your favorite shoujo anime?",
+                link: "https://anilist.co/activity/491126299",
+                image: "images/challenge/yona.webp",
+                content: [9]
+            },
         ]
 
     }
