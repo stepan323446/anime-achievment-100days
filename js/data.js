@@ -391,6 +391,12 @@ function getDataSteve() {
                 image: "images/challenge/yona.webp",
                 content: [9]
             },
+            {
+                title: "Favorite tsundere",
+                link: "https://anilist.co/activity/491562726",
+                image: "images/challenge/tohsaka.png",
+                content: [27]
+            },
         ]
 
     }
