@@ -510,6 +510,13 @@ h2{
 
     transition: 0.15s ease;
 }
+.sub-block{
+    margin-bottom: 10px;
+}
+h4{
+    color: #767676;
+    margin-bottom: 7px;
+}
 .like-btn .likebtn-button:hover .lb-count{
     color: rgb(255, 255, 255) !important;
 }

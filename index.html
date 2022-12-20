@@ -66,16 +66,27 @@
                 <h2>Sort</h2>
                 <div class="blocks">
                     <div class="block">
-                        <div id="select-days">
-                            <div class="select selected" min-day="1" max-day="100">All</div>
-                            <div class="select" min-day="1" max-day="20">1-20</div>
-                            <div class="select" min-day="21" max-day="40">21-40</div>
-                            <div class="select" min-day="41" max-day="60">41-60</div>
-                            <div class="select" min-day="61" max-day="80">61-80</div>
-                            <div class="select" min-day="81" max-day="100">81-100</div>
+                        <div class="range-days sub-block">
+                            <h4>Range of days</h4>
+                            <div id="select-days">
+                                <div class="select selected" min-day="1" max-day="100">All</div>
+                                <div class="select" min-day="1" max-day="20">1-20</div>
+                                <div class="select" min-day="21" max-day="40">21-40</div>
+                                <div class="select" min-day="41" max-day="60">41-60</div>
+                                <div class="select" min-day="61" max-day="80">61-80</div>
+                                <div class="select" min-day="81" max-day="100">81-100</div>
+                            </div>
+                        </div>
+                        <div class="type-sort">
+                            <h4>Type of sort</h4>
+                            <div id="select-type-sort">
+                                <div class="select selected">By days</div>
+                                <!-- <div class="select">By likes</div> -->
+                            </div>
                         </div>
                     </div>
                     <div class="block">
+                        <h4>Search</h4>
                         <input id="search-input" type="text" placeholder="Find out more!">
                         <div class="subtext-input">You can write the number of the day (18 Day), the question of the day
                             or title of anime</div>
@@ -98,13 +109,11 @@
                 </div>
             </div>
 
-            <div class="like-btn">
-                <!-- LikeBtn.com BEGIN -->
+            <!-- <div class="like-btn">
                 <span class="likebtn-wrapper" data-ef_voting="bounce" data-identifier="item_1"
                     data-dislike_enabled="false" data-icon_l="hrt1" data-icon_l_c="#ffffff" data-i18n_like="Like me"></span>
                 <script>(function (d, e, s) { if (d.getElementById("likebtn_wjs")) return; a = d.createElement(e); m = d.getElementsByTagName(e)[0]; a.async = 1; a.id = "likebtn_wjs"; a.src = s; m.parentNode.insertBefore(a, m) })(document, "script", "//w.likebtn.com/js/w/widget.js");</script>
-                <!-- LikeBtn.com END -->
-            </div>
+            </div> -->
 
 
             <div id="challenge-items">
