@@ -443,6 +443,13 @@ function getDataSteve() {
                 content: [27],
                 likes: 6
             },
+            {
+                title: "Favorite harem/reverse harem",
+                link: "https://anilist.co/activity/492172200",
+                image: "images/challenge/5.jpg",
+                content: [6, 9],
+                likes: 0
+            }
         ]
 
     }
