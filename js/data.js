@@ -448,7 +448,7 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/492172200",
                 image: "images/challenge/5.jpg",
                 content: [6, 9],
-                likes: 0
+                likes: 5
             }
         ]
 
