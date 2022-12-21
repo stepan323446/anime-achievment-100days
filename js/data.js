@@ -449,6 +449,13 @@ function getDataSteve() {
                 image: "images/challenge/5.jpg",
                 content: [6, 9],
                 likes: 5
+            },
+            {
+                title: "FSubs or dubs",
+                link: "https://anilist.co/activity/492644809",
+                image: "images/challenge/anilibria.jpg",
+                content: [26],
+                likes: 0
             }
         ]
 
