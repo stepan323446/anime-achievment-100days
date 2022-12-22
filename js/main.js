@@ -23,34 +23,33 @@ const itemsContainer = document.getElementById("challenge-items");
 let items = [];
 let hrBlocks = [];
 
-for(let i = 0; i < listItems.length; i++){
-    if((i % 10) == 0 && i != 0){
-        let hrBlock = document.createElement("div");
-        hrBlock.classList.add("hr-block");
-        hrBlock.innerHTML = `<div>${i}+</div>`;
-
-        hrBlocks.push(hrBlock);
-        itemsContainer.append(hrBlock);
-    }
-
+function createItem(questionItem) {
     let item = document.createElement("a");
     item.classList.add("item");
-    item.setAttribute("href", listItems[i].link);
+    item.setAttribute("href", questionItem.question.link);
     item.innerHTML = `
                     <div class="item-img">
-                        <img src="${listItems[i].image}" alt="">
+                        <img src="${questionItem.question.image}" alt="">
                     </div>
                     <div class="info">
-                        <h3>${listItems[i].title}</h3>
+                        <h3>${questionItem.question.title}</h3>
                     </div>
-                    <span>${i + 1} Day</span>
-    `
+                    <span>${questionItem.day} Day</span>
+    `;
+    itemsContainer.append(item);
+}
+function clearItems() {
+    itemsContainer.innerHTML = "";
+    isScrollLoading = false;
+}
+
+for (let i = 0; i < listItems.length; i++) {
     let sortTagsText = "";
-    if(listItems[i].addSortTag != undefined)
+    if (listItems[i].addSortTag != undefined)
         sortTagsText += listItems[i].addSortTag;
 
     let sortTitleText = "";
-    if(listItems[i].content != undefined){
+    if (listItems[i].content != undefined) {
         listItems[i].content.forEach(titleID => {
             sortTitleText += listTitles[titleID].title + ", ";
         });
@@ -58,51 +57,95 @@ for(let i = 0; i < listItems.length; i++){
     sortTitleText = sortTitleText.toLowerCase();
 
     items.push({
-        elem: item,
+        question: listItems[i],
         searchText: `${listItems[i].title.toLowerCase()} - ${i + 1} day - ${sortTagsText} - ${sortTitleText}`,
         day: i + 1,
         contentIDs: listItems[i].content
     });
-    console.log(items[i].searchText)
-    itemsContainer.append(item);
 }
+
+// Будет загружать каждые 20
+const scrollLoadingCount = 20;
+// Сколько в данный момент максимум
+let scrollLoadingMax = scrollLoadingCount;
+// Сколько в данный момент загружено
+let scrollLoadingCurrent = 0;
+// Работает ли сейчас загрузка? Есть возможность дальше загружать?
+let isScrollLoading = true;
+// Цикл загрузки предметов от и до
+function loadingItems() {
+    
+
+    for (let i = scrollLoadingCurrent; i < scrollLoadingMax; i++) {
+        if((scrollLoadingCurrent % 10) == 0 && scrollLoadingCurrent != 0){
+            let hrBlock = document.createElement("div");
+            hrBlock.classList.add("hr-block");
+            hrBlock.innerHTML = `<div>${scrollLoadingCurrent}+</div>`;
+    
+            hrBlocks.push(hrBlock);
+            itemsContainer.append(hrBlock);
+        }
+
+        if (items.length - 1 < i) {
+            isScrollLoading = false;
+            break;
+        }
+        scrollLoadingCurrent++;
+        createItem(items[i]);
+    }
+    scrollLoadingMax += scrollLoadingCount;
+}
+// ВЫполнить функцию Загрузка предметов от 1 до 100
+function allItemsLoad() {
+    scrollLoadingMax = scrollLoadingCount;
+    scrollLoadingCurrent = 0;
+    isScrollLoading = true;
+    
+    loadingItems();
+}
+// Событие загрузки по скроллу, когда скролл от конца меньше 200 пикс.
+window.addEventListener("scroll", function (e) {
+    if (isScrollLoading) {
+        let htmlHeight = document.documentElement.offsetHeight;
+        let pageYOffsetBottom = window.pageYOffset + window.innerHeight;
+
+        if (htmlHeight - pageYOffsetBottom < 200) {
+            loadingItems();
+
+        }
+    }
+});
+
+allItemsLoad();
 
 // Поиск в реальном времени
 let searchInput = document.getElementById("search-input");
-searchInput.addEventListener("input", function(e){
+searchInput.addEventListener("input", function (e) {
 
     // Отключить кнопки-сортировки
     daysSelectBtns.forEach(btn => {
         btn.classList.remove("selected");
     });
-    
 
+    clearItems();
     // Поиск
     let value = e.currentTarget.value.toLowerCase();
-    if(value == "")
-    {
-        items.forEach(element => {
-            element.elem.classList.remove("hide");
-        });
-        isActiveHrBlocks(true);
+    if (value == "") {
+        allItemsLoad();
         isActiveNothing(false);
         daysSelectBtns[0].classList.add("selected");
-        
+
         return;
     }
-    isActiveHrBlocks(false);
 
     let founded = 0;
     items.forEach(element => {
-        if(element.searchText.includes(value)){
-            element.elem.classList.remove("hide");
+        if (element.searchText.includes(value)) {
+            createItem(element);
             founded++;
         }
-        else{
-            element.elem.classList.add("hide");
-        }
     });
-    if(founded == 0)
+    if (founded == 0)
         isActiveNothing(true);
     else
         isActiveNothing(false);
@@ -112,7 +155,7 @@ searchInput.addEventListener("input", function(e){
 // Кнопки-сортировки по дням
 let daysSelectBtns = document.querySelectorAll("#select-days .select");
 daysSelectBtns.forEach(btn => {
-    btn.addEventListener("click", function(e){
+    btn.addEventListener("click", function (e) {
         let elem = e.currentTarget;
 
         // Если кнопка выбрана, то она активна и выделяется визуальна
@@ -127,23 +170,23 @@ daysSelectBtns.forEach(btn => {
         let max = +elem.getAttribute("max-day");
 
         let founded = 0;
+
         // Поиск тех дней, что нужны
-        items.forEach(item => {
-            if(min <= item.day && item.day <= max)
-            {
-                item.elem.classList.remove("hide");
+        clearItems();
+        for (let i = min - 1; i < max; i++) {
+            if(min == 1 && max == 100){
                 founded++;
+                allItemsLoad();
+                break;
             }
-            else{
-                item.elem.classList.add("hide");
+            if(items.length - 1 < i){
+                break;
             }
-            // Если выбраны все дни, то возвращаем разделительные блоки, как и было раньше
-            if(min == 1 && max == 100)
-                isActiveHrBlocks(true);
-            else
-                isActiveHrBlocks(false);
-        });
-        if(founded == 0)
+            createItem(items[i]);
+            founded++;
+        }
+
+        if (founded == 0)
             isActiveNothing(true);
         else
             isActiveNothing(false);
@@ -155,7 +198,7 @@ daysSelectBtns.forEach(btn => {
 // Сбор данных со всех списков
 let allTitlesCount = 0;
 listItems.forEach(item => {
-    if(item.content != undefined){
+    if (item.content != undefined) {
         item.content.forEach(id => {
             listTitles[id].count += 1;
             allTitlesCount += 1;
@@ -166,10 +209,10 @@ listItems.forEach(item => {
 // Сортировка
 listTitles.sort(compareTitlesCount);
 function compareTitlesCount(title1, title2) {
-    if(title1.count > title2.count){
+    if (title1.count > title2.count) {
         return -1;
     }
-    if(title1.count < title2.count){
+    if (title1.count < title2.count) {
         return 1;
     }
     return 0;
@@ -207,7 +250,7 @@ listSort.forEach(element => {
     procLeft -= proc;
 
     // Создание основных тайтлов, главная 4-ка популярных
-    elemTextStat(listTitles[element.index].title, element.color, proc, function(e){
+    elemTextStat(listTitles[element.index].title, element.color, proc, function (e) {
         showItemsWithTitle(listTitles[element.index].id);
     });
     // Отметить тайтл уже как видимый для пользователя в статистике
@@ -218,16 +261,16 @@ listSort.forEach(element => {
 othersBtn();
 
 function othersBtn() {
-    elemTextStat("Others", "#5c5c5c", procLeft, function(e){
+    elemTextStat("Others", "#5c5c5c", procLeft, function (e) {
         let otherTitleBtns = [];
 
         listTitles.forEach(element => {
             // Если элемент ещё не показан, значит его показывать после клика в статистике
-            if(element.isShowing == false){
+            if (element.isShowing == false) {
                 // Опять высчитываем проценты
                 let proc = element.count * 100 / allTitlesCount;
                 // Создаём кнопку с теми же функциями, что и основную
-                otherTitleBtns.push(elemTextStat(element.title, "#5c5c5c", proc, function(e){
+                otherTitleBtns.push(elemTextStat(element.title, "#5c5c5c", proc, function (e) {
                     showItemsWithTitle(element.id);
                 }));
             }
@@ -241,7 +284,7 @@ function othersBtn() {
         closeOthersBtn.classList.add("btn");
         closeOthersBtn.textContent = "Hide";
 
-        closeOthersBtn.addEventListener("click", function(e){
+        closeOthersBtn.addEventListener("click", function (e) {
             e.preventDefault();
             otherTitleBtns.forEach(element => {
                 element.remove();
@@ -256,22 +299,18 @@ function othersBtn() {
 
 
 // Показать в списке вопросов дня только те, что содержат индекс тайтла
-function showItemsWithTitle(indexTitle){
+function showItemsWithTitle(indexTitle) {
     daysSelectBtns.forEach(btn => {
         btn.classList.remove("selected");
     });
     isActiveNothing(false);
-    isActiveHrBlocks(false);
-    for(let i = 0; i < items.length; i++){
-        if(items[i].contentIDs != undefined){
-            if(items[i].contentIDs.includes(indexTitle)){
-                items[i].elem.classList.remove("hide");
-            } else{
-                items[i].elem.classList.add("hide");
+    clearItems();
+    for (let i = 0; i < items.length; i++) {
+        
+        if (items[i].contentIDs != undefined) {
+            if (items[i].contentIDs.includes(indexTitle)) {
+                createItem(items[i]);
             }
-
-        } else{
-            items[i].elem.classList.add("hide");
         }
     }
 }
@@ -289,27 +328,22 @@ function elemTextStat(name, color, proc, funcClick) {
 
 //////////////////////////////////////////////////////
 
-// Включить / Выключить разделительные блоки
-function isActiveHrBlocks(isActive){
-    if(isActive){
-        hrBlocks.forEach(element => {
-            element.classList.remove("hide");
-        });
+function isActiveNothing(isActive) {
+    if (isActive){
+        let nothingElement = document.getElementById("nothing-text");
+        if(nothingElement != undefined)
+            return;
+
+        nothingElement = document.createElement("div");
+        nothingElement.setAttribute("id", "nothing-text");
+        nothingElement.textContent = `Unfortunately we didn't find anything. Most likely, you entered an invalid request or I have not completed this task yet (the maximum completed day is ${items.length})`;
+
+        itemsContainer.append(nothingElement);
     }
     else{
-        hrBlocks.forEach(element => {
-            element.classList.add("hide");
-        });
+        let nothingElement = document.getElementById("nothing-text");
+        if(nothingElement != undefined){
+            nothingElement.remove();
+        }
     }
-    
-}
-
-// Активировать текст, если ничего не найдено
-let nothing = document.getElementById("nothing-text");
-nothing.textContent = `Unfortunately we didn't find anything. Most likely, you entered an invalid request or I have not completed this task yet (the maximum completed day is ${items.length})`
-function isActiveNothing(isActive){
-    if(isActive)
-        nothing.classList.remove("hide");
-    else
-        nothing.classList.add("hide");
 }
