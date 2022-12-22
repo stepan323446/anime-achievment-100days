@@ -455,7 +455,15 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/492644809",
                 image: "images/challenge/anilibria.jpg",
                 content: [26],
-                likes: 0
+                likes: 7
+            },
+            {
+                title: "Favorite studio",
+                link: "https://anilist.co/activity/492971116",
+                image: "images/challenge/a1.png",
+                content: [26],
+                likes: 0,
+                addSortTag: "Favorite studio ghibi work"
             }
         ]
 
