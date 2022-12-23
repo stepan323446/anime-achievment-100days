@@ -462,8 +462,15 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/492971116",
                 image: "images/challenge/a1.png",
                 content: [26],
-                likes: 0,
+                likes: 7,
                 addSortTag: "Favorite studio ghibi work"
+            },
+            {
+                title: "Share any experiences where you've been bullied or liking anime",
+                link: "https://anilist.co/activity/492971116",
+                image: "images/anilist/bulling.jpg",
+                content: [26],
+                likes: 0,
             }
         ]
 
