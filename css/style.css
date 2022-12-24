@@ -114,14 +114,17 @@ h1{
     margin-bottom: 40px;
     margin-top: 40px;
 }
+#challenge-items.hide-hr .hr-block{
+    display: none;
+}
 #challenge-items .item{
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: inherit;
+        -ms-flex-align: inherit;
+            align-items: inherit;
 
     background-color: var(--block-color);
     margin-bottom: 20px;
@@ -149,10 +152,20 @@ h1{
        object-fit: cover;
 }
 #challenge-items .info{
+    position: relative;
     margin-left: 30px;
+    min-height: 100%;
     font-size: 23px;
+    width: 100%;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
 }
-#challenge-items span{
+#challenge-items .big-day{
     position: absolute;
     right: 0px;
     bottom: -10px;
@@ -166,9 +179,64 @@ h1{
     -o-transition: 0.15s ease;
     transition: 0.15s ease;
 }
+#challenge-items.hide-days .big-day{
+    display: none;
+}
+#challenge-items .tag-stats{
+    display: flex;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+#challenge-items .tag-stats span{
+    display: inline-block;
+    color: #fff;
+    background-color: #3c3c3c;
+    padding: 1px 5px;
+    border-radius: 3px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    white-space: nowrap;
+}
+
 #challenge-items .item:hover{
     background-color: #c4d8ef;
     color: #152232;
+}
+#challenge-items .item:hover .tag-stats span{
+    color: #fff;
+    opacity: 0.7;
+}
+#challenge-items .item .tag-stats .likes{
+    position: relative;
+    padding-right: 22px;
+}
+#challenge-items.hide-likes .tag-stats .likes{
+    display: none;
+}
+#challenge-items .item .tag-stats .likes::after{
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 13px;
+
+    right: 4px;
+    top: calc(50% - 1px);
+    transform: translateY(-50%);
+
+    background-image: url(../images/like.svg);
+    background-size: contain;
+}
+#challenge-items.hide-difficulty .tag-stats .difficulty{
+    display: none;
+}
+#challenge-items .tag-stats .difficulty-1{
+    background-color: rgb(0, 164, 8);
+}
+#challenge-items .tag-stats .difficulty-2{
+    background-color: rgb(212, 195, 0);
+}
+#challenge-items .tag-stats .difficulty-3{
+    background-color: rgb(186, 0, 0);
 }
 #challenge-items .item:hover{
     background-color: #c4d8ef;
@@ -323,7 +391,9 @@ h2{
     -o-transition: 0.15s ease;
     transition: 0.15s ease
 }
-.select:hover,
+.select:hover{
+    background-color: #416b9b;
+}
 .select.selected{
     background-color: var(--block-color-hover);
 }
@@ -547,7 +617,7 @@ h4{
     #challenge-items .info{
         font-size: 20px;
     }
-    #challenge-items span{
+    #challenge-items .big-day{
         font-size: 45px;
     }
 }

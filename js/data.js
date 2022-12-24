@@ -5,6 +5,12 @@ function getDataSteve() {
         Current: "current",
         Failed: "failed"
     }
+    const Difficult = {
+        none: 0,
+        easy: 1,
+        medium: 2,
+        hard: 3
+    }
 
     // Создание объекта тайтла
     /////////////////////////////////////////////////////////
@@ -115,42 +121,48 @@ function getDataSteve() {
                 image: "images/challenge/1.jpg",
                 content: [1],
                 addSortTag: "xfsxasf", // Проверка, добавляет доп. условия поиска
-                likes: 4
+                likes: 4,
+                difficulty: Difficult.easy
             },
             {
                 title: "Favorite anime you've watched so far",
                 link: "https://anilist.co/activity/472554642",
                 image: "images/challenge/2.jpg",
                 content: [2, 3],
-                likes: 3
+                likes: 3,
+                difficulty: Difficult.easy
             },
             {
                 title: "Favorite male anime character ever",
                 link: "https://anilist.co/activity/472952368",
                 image: "images/challenge/3.png",
                 content: [4],
-                likes: 6
+                likes: 6,
+                difficulty: Difficult.medium
             },
             {
                 title: "Favorite female anime character ever",
                 link: "https://anilist.co/activity/473416431",
                 image: "images/challenge/4.png",
                 content: [5],
-                likes: 6
+                likes: 6,
+                difficulty: Difficult.easy
             },
             {
                 title: "Anime you're ashamed you enjoyed",
                 link: "https://anilist.co/activity/473961636",
                 image: "images/challenge/5.jpg",
                 content: [6, 7],
-                likes: 5
+                likes: 5,
+                difficulty: Difficult.easy
             },
             {
                 title: "Anime you want to see but haven't yet",
                 link: "https://anilist.co/activity/474424506",
                 image: "images/challenge/6.jpg",
                 content: [8],
-                likes: 6
+                likes: 6,
+                difficulty: Difficult.easy
 
             },
             {
@@ -158,35 +170,40 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/474806357",
                 image: "images/challenge/NO.jpg",
                 content: [20],
-                likes: 5
+                likes: 5,
+                difficulty: Difficult.none
             },
             {
                 title: "Favorite anime couple",
                 link: "https://anilist.co/activity/475161889",
                 image: "images/challenge/7.webp",
                 content: [5],
-                likes: 3
+                likes: 3,
+                difficulty: Difficult.easy
             },
             {
                 title: "Best Anime Villian",
                 link: "https://anilist.co/activity/475633964",
                 image: "images/challenge/9.png",
                 content: [9],
-                likes: 7
+                likes: 7,
+                difficulty: Difficult.medium
             },
             {
                 title: "Favorite fighter anime",
                 link: "https://anilist.co/activity/476003786",
                 image: "images/challenge/10.jpg",
                 content: [10],
-                likes: 7
+                likes: 7,
+                difficulty: Difficult.medium
             },
             {
                 title: "Favorite mech anime",
                 link: "https://anilist.co/activity/476382784",
                 image: "images/challenge/11.jpg",
                 content: [4],
-                likes: 6
+                likes: 6,
+                difficulty: Difficult.easy
             }
             ,
             {
@@ -194,196 +211,224 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/476902666",
                 image: "images/challenge/12.jpg",
                 content: [11],
-                likes: 5
+                likes: 5,
+                difficulty: Difficult.easy
             },
             {
                 title: "Anime character you most similar to",
                 link: "https://anilist.co/activity/477263410",
                 image: "images/challenge/13.png",
                 content: [5],
-                likes: 5
+                likes: 5,
+                difficulty: Difficult.easy
             },
             {
                 title: "Saddest Anime Death",
                 link: "https://anilist.co/activity/477793706",
                 image: "images/challenge/14.jpg",
                 content: [12],
-                likes: 4
+                likes: 4,
+                difficulty: Difficult.hard
             },
             {
                 title: "Favorite Animal sidekick, pet or summoning from any anime",
                 link: "https://anilist.co/activity/478226027",
                 image: "images/challenge/15.jpg",
                 content: [13],
-                likes: 4
+                likes: 4,
+                difficulty: Difficult.medium
             },
             {
                 title: "Anime with the best animation",
                 link: "https://anilist.co/activity/478557312",
                 image: "images/challenge/16.jpg",
                 content: [11],
-                likes: 3
+                likes: 3,
+                difficulty: Difficult.medium
             },
             {
                 title: "Favorite supporting male anime character",
                 link: "https://anilist.co/activity/478942417",
                 image: "images/challenge/17.png",
                 content: [14],
-                likes: 5
+                likes: 5,
+                difficulty: Difficult.medium
             },
             {
                 title: "Favorite supporting female anime character",
                 link: "https://anilist.co/activity/479324943",
                 image: "images/challenge/18.png",
                 content: [15],
-                likes: 4
+                likes: 4,
+                difficulty: Difficult.medium
             },
             {
                 title: "Most epic scene ever",
                 link: "https://anilist.co/activity/479714389",
                 image: "images/challenge/19.jpg",
                 content: [16],
-                likes: 5
+                likes: 5,
+                difficulty: Difficult.medium
             },
             {
                 title: "Anime character that gets on your nervers",
                 link: "https://anilist.co/activity/480327407",
                 image: "images/challenge/20.jpg",
                 content: [17],
-                likes: 4
+                likes: 4,
+                difficulty: Difficult.hard
             },
             {
                 title: "Favorite goofy anime character",
                 link: "https://anilist.co/activity/480610555",
                 image: "images/challenge/21.png",
                 content: [7],
-                likes: 3
+                likes: 3,
+                difficulty: Difficult.easy
             },
             {
                 title: "Favorite weapon, gear or armor used in an anime",
                 link: "https://anilist.co/activity/480996817",
                 image: "images/challenge/22.jpg",
                 content: [0],
-                likes: 4
+                likes: 4,
+                difficulty: Difficult.easy
             },
             {
                 title: "Favorite attack someone used in an anime",
                 link: "https://anilist.co/activity/481409842",
                 image: "images/challenge/22.jpg",
                 content: [0],
-                likes: 4
+                likes: 4,
+                difficulty: Difficult.medium
             },
             {
                 title: "Moment that shoked you the most in any anime",
                 link: "https://anilist.co/activity/481687733",
                 image: "images/challenge/24.png",
                 content: [14],
-                likes: 6
+                likes: 6,
+                difficulty: Difficult.hard
             },
             {
                 title: "Anime that never gets old no matter how many times you've rewatched it",
                 link: "https://anilist.co/activity/482325002",
                 image: "images/challenge/22.jpg",
                 content: [0, 18, 5, 10, 9],
-                likes: 1
+                likes: 1,
+                difficulty: Difficult.easy
             },
             {
                 title: "Best anime fight",
                 link: "https://anilist.co/activity/482715319",
                 image: "images/challenge/19.jpg",
                 content: [16],
-                likes: 4
+                likes: 4,
+                difficulty: Difficult.easy
             },
             {
                 title: "Most Badass Scene from Any Anime Character",
                 link: "https://anilist.co/activity/483190778",
                 image: "images/challenge/27.jpg",
                 content: [18],
-                likes: 3
+                likes: 3,
+                difficulty: Difficult.easy
             },
             {
                 title: "Favorite quote from any anime character",
                 link: "https://anilist.co/activity/483541396",
                 image: "images/challenge/22.jpg",
                 content: [0],
-                likes: 3
+                likes: 3,
+                difficulty: Difficult.medium
             },
             {
                 title: "An anime you wished was real",
                 link: "https://anilist.co/activity/483916617",
                 image: "images/challenge/yona.webp",
                 content: [5, 9],
-                likes: 5
+                likes: 5,
+                difficulty: Difficult.medium
             },
             {
                 title: "An Anime You Wished Never Ended and Continued On",
                 link: "https://anilist.co/activity/484253057",
                 image: "images/challenge/27.jpg",
                 content: [18],
-                likes: 2
+                likes: 2,
+                difficulty: Difficult.medium
             },
             {
                 title: "Favorite anime OP",
                 link: "https://anilist.co/activity/484759398",
                 image: "images/challenge/toradora.jpg",
                 content: [0, 19],
-                likes: 4
+                likes: 4,
+                difficulty: Difficult.medium
             },
             {
                 title: "Which Anime Character would I want to be as best friend",
                 link: "https://anilist.co/activity/485109068",
                 image: "images/challenge/Vladilena.png",
                 content: [4, 19],
-                likes: 4
+                likes: 4,
+                difficulty: Difficult.medium
             },
             {
                 title: "Anime Character I Would Like to Cosplay As",
                 link: "https://anilist.co/activity/485634245",
                 image: "images/challenge/shinei-86.webp",
                 content: [4],
-                likes: 8
+                likes: 8,
+                difficulty: Difficult.medium
             },
             {
                 title: "What Anime Character Would be my Workout Buddy",
                 link: "https://anilist.co/activity/486155884",
                 image: "images/challenge/NO.jpg",
                 content: [20],
-                likes: 4
+                likes: 4,
+                difficulty: Difficult.none
             },
             {
                 title: "What Crossover I Would Like to See",
                 link: "https://anilist.co/activity/486588791",
                 image: "images/challenge/10.jpg",
                 content: [10, 4],
-                likes: 2
+                likes: 2,
+                difficulty: Difficult.hard
             },
             {
                 title: "Your first anime crush",
                 link: "https://anilist.co/activity/486898673",
                 image: "images/challenge/zero_two.jpg",
                 content: [21],
-                likes: 5
+                likes: 5,
+                difficulty: Difficult.easy
             },
             {
                 title: "Anime that changed you",
                 link: "https://anilist.co/activity/487293734",
                 image: "images/challenge/darlinginthefraxx.jpg",
                 content: [21],
-                likes: 7
+                likes: 7,
+                difficulty: Difficult.medium
             },
             {
                 title: "Do you like yaoi and/or yuri",
                 link: "https://anilist.co/activity/487701683",
                 image: "images/challenge/bocchitherock.jpg",
                 content: [22],
-                likes: 6
+                likes: 6,
+                difficulty: Difficult.easy
             },
             {
                 title: "Favorite music in anime",
                 link: "https://anilist.co/activity/488090868",
                 image: "images/challenge/11.jpg",
                 content: [4, 23, 24, 25],
-                likes: 8
+                likes: 8,
+                difficulty: Difficult.hard
             },
             {
                 title: "Favorite VA/Seiyuu",
@@ -391,14 +436,16 @@ function getDataSteve() {
                 image: "images/challenge/Sharon.png",
                 content: [26],
                 addSortTag: "favorite voice actor anilibria sharon",
-                likes: 4
+                likes: 4,
+                difficulty: Difficult.easy
             },
             {
                 title: "Anime character you hate",
                 link: "https://anilist.co/activity/489109756",
                 image: "images/challenge/Ryuunosuke.png",
                 content: [27],
-                likes: 7
+                likes: 7,
+                difficulty: Difficult.easy
             },
             {
                 title: "Most epic and shocking anime scene ever",
@@ -406,56 +453,64 @@ function getDataSteve() {
                 image: "images/challenge/classroom.webp",
                 content: [28],
                 addSortTag: "Most epic or shocking anime scene ever",
-                likes: 6
+                likes: 6,
+                difficulty: Difficult.medium
             },
             {
                 title: "Favorite canon couple",
                 link: "https://anilist.co/activity/489873862",
                 image: "images/challenge/7.webp",
                 content: [5],
-                likes: 10
+                likes: 10,
+                difficulty: Difficult.easy
             },
             {
                 title: "Who do you ship?",
                 link: "https://anilist.co/activity/490371040",
                 image: "images/anilist/ayanakodixkei.webp",
                 content: [28],
-                likes: 5
+                likes: 5,
+                difficulty: Difficult.medium
             },
             {
                 title: "Favorite anime ED",
                 link: "https://anilist.co/activity/490617580",
                 image: "images/challenge/kaguya.jpg",
                 content: [29],
-                likes: 5
+                likes: 5,
+                difficulty: Difficult.easy
             },
             {
                 title: "Guys, what's your favorite shoujo anime?",
                 link: "https://anilist.co/activity/491126299",
                 image: "images/challenge/yona.webp",
                 content: [9],
-                likes: 8
+                likes: 8,
+                difficulty: Difficult.easy
             },
             {
                 title: "Favorite tsundere",
                 link: "https://anilist.co/activity/491562726",
                 image: "images/challenge/tohsaka.png",
                 content: [27],
-                likes: 6
+                likes: 6,
+                difficulty: Difficult.medium
             },
             {
                 title: "Favorite harem/reverse harem",
                 link: "https://anilist.co/activity/492172200",
                 image: "images/challenge/5.jpg",
                 content: [6, 9],
-                likes: 5
+                likes: 5,
+                difficulty: Difficult.easy
             },
             {
                 title: "Subs or dubs",
                 link: "https://anilist.co/activity/492644809",
                 image: "images/challenge/anilibria.jpg",
                 content: [26],
-                likes: 7
+                likes: 7,
+                difficulty: Difficult.easy
             },
             {
                 title: "Favorite studio",
@@ -463,14 +518,16 @@ function getDataSteve() {
                 image: "images/challenge/a1.png",
                 content: [26],
                 likes: 7,
-                addSortTag: "Favorite studio ghibi work"
+                addSortTag: "Favorite studio ghibi work",
+                difficulty: Difficult.medium
             },
             {
                 title: "Share any experiences where you've been bullied or liking anime",
                 link: "https://anilist.co/activity/492971116",
                 image: "images/anilist/bulling.jpg",
                 content: [26],
-                likes: 0,
+                likes: 7,
+                difficulty: Difficult.easy
             }
         ]
 

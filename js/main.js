@@ -27,14 +27,36 @@ function createItem(questionItem) {
     let item = document.createElement("a");
     item.classList.add("item");
     item.setAttribute("href", questionItem.question.link);
+
+    let difficultyText = "none";
+    switch (questionItem.question.difficulty) {
+        case 3:
+            difficultyText = "Hard question"
+            break;
+        case 2:
+            difficultyText = "Medium question"
+            break;
+        case 1:
+            difficultyText = "Easy question"
+            break;
+        default:
+            difficultyText = "None"
+            break;
+    }
+
     item.innerHTML = `
                     <div class="item-img">
                         <img src="${questionItem.question.image}" alt="">
                     </div>
                     <div class="info">
+                        <div class="tag-stats">
+                            <span class="likes">${questionItem.question.likes}</span>
+                            <span class="difficulty difficulty-${questionItem.question
+                            .difficulty}">${difficultyText}</span>
+                        </div>
                         <h3>${questionItem.question.title}</h3>
                     </div>
-                    <span>${questionItem.day} Day</span>
+                    <span class="big-day">${questionItem.day} Day</span>
     `;
     itemsContainer.append(item);
 }
@@ -43,6 +65,7 @@ function clearItems() {
     isScrollLoading = false;
 }
 
+// Добавление массива вопросов и дней
 for (let i = 0; i < listItems.length; i++) {
     let sortTagsText = "";
     if (listItems[i].addSortTag != undefined)
@@ -133,7 +156,7 @@ searchInput.addEventListener("input", function (e) {
     if (value == "") {
         allItemsLoad();
         isActiveNothing(false);
-        daysSelectBtns[0].classList.add("selected");
+        resetDaysSelectDisplay();
 
         return;
     }
@@ -151,18 +174,28 @@ searchInput.addEventListener("input", function (e) {
         isActiveNothing(false);
 });
 
+// Кнопки, где только один выбранный элемент
+let groupSelectOrdinary = document.querySelectorAll(".select-ordinary");
+groupSelectOrdinary.forEach(group => {
+    let btns = group.querySelectorAll(".select");
+
+    btns.forEach(btn => {
+        btn.addEventListener("click", function(e){
+            // Если кнопка выбрана, то она активна и выделяется визуальна
+            btns.forEach(btn => {
+                btn.classList.remove("selected");
+            });
+            btn.classList.add("selected");
+        })
+    });
+});
+
 
 // Кнопки-сортировки по дням
 let daysSelectBtns = document.querySelectorAll("#select-days .select");
 daysSelectBtns.forEach(btn => {
     btn.addEventListener("click", function (e) {
         let elem = e.currentTarget;
-
-        // Если кнопка выбрана, то она активна и выделяется визуальна
-        daysSelectBtns.forEach(btn => {
-            btn.classList.remove("selected");
-        });
-        elem.classList.add("selected");
 
 
         // Получение от минимального числа дня до максимального
@@ -173,15 +206,17 @@ daysSelectBtns.forEach(btn => {
 
         // Поиск тех дней, что нужны
         clearItems();
-        for (let i = min - 1; i < max; i++) {
+        for(let i = 0; i < items.length; i++){
             if(min == 1 && max == 100){
                 founded++;
                 allItemsLoad();
                 break;
             }
-            if(items.length - 1 < i){
-                break;
-            }
+            if(items[i].day > max)
+                continue;
+            if(items[i].day < min)
+                continue;
+
             createItem(items[i]);
             founded++;
         }
@@ -191,6 +226,53 @@ daysSelectBtns.forEach(btn => {
         else
             isActiveNothing(false);
     });
+});
+function resetDaysSelectDisplay(){
+    daysSelectBtns.forEach(btn => {
+        btn.classList.remove("selected");
+    });
+    daysSelectBtns[0].classList.add("selected");
+}
+
+// Кнопки тегов
+let tagsSelectBtns = document.querySelectorAll("#show-tags-type .select");
+tagsSelectBtns.forEach(btn => {
+    // Класс, который будет установлен на элемент со всеми днями, чтобы по CSS скрывать нужные теги
+    let hideClass = btn.getAttribute("hide-class");
+
+    btn.addEventListener("click", function(e){
+        btn.classList.toggle("selected");
+        itemsContainer.classList.toggle(hideClass);
+    });
+});
+
+// Кнопки по сортировке списка
+let sortBtns = document.querySelectorAll("#select-type-sort .select");
+sortBtns.forEach(btn => {
+    let typeSort = btn.getAttribute("type-sort");
+    
+    btn.addEventListener("click", function(e){
+        switch (typeSort) {
+            case "days":
+                items.sort((a, b) => a.day - b.day);
+                isHrActive(true);
+                break;
+            case "likes":
+                items.sort((a, b) => b.question.likes - a.question.likes);
+                isHrActive(false);
+                break;
+            case "difficulty":
+                items.sort((a, b) => b.question.difficulty - a.question.difficulty);
+                isHrActive(false);
+                break;
+            default:
+                break;
+        }
+        resetDaysSelectDisplay();
+        clearItems();
+        allItemsLoad();
+    });
+    
 });
 
 // Статистика по тайтлам
@@ -327,6 +409,13 @@ function elemTextStat(name, color, proc, funcClick) {
 }
 
 //////////////////////////////////////////////////////
+function isHrActive(isActive) {  
+    if(isActive){
+        itemsContainer.classList.remove("hide-hr")
+    } else{
+        itemsContainer.classList.add("hide-hr")
+    }
+}
 
 function isActiveNothing(isActive) {
     if (isActive){

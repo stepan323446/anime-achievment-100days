@@ -16,7 +16,7 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css?ver=9.0">
+    <link rel="stylesheet" href="css/style.css?ver=11.0">
 </head>
 
 <body>
@@ -63,12 +63,12 @@
                 </div>
             </div>
             <div class="sort">
-                <h2>Sort</h2>
+                <h2>Display</h2>
                 <div class="blocks">
                     <div class="block">
                         <div class="range-days sub-block">
                             <h4>Range of days</h4>
-                            <div id="select-days">
+                            <div id="select-days" class="select-ordinary">
                                 <div class="select selected" min-day="1" max-day="100">All</div>
                                 <div class="select" min-day="1" max-day="20">1-20</div>
                                 <div class="select" min-day="21" max-day="40">21-40</div>
@@ -79,9 +79,18 @@
                         </div>
                         <div class="type-sort">
                             <h4>Type of sort</h4>
-                            <div id="select-type-sort">
-                                <div class="select selected">By days</div>
-                                <!-- <div class="select">By likes</div> -->
+                            <div id="select-type-sort" class="select-ordinary">
+                                <div class="select selected" type-sort="days">By days</div>
+                                <div class="select" type-sort="likes">By likes</div>
+                                <div class="select" type-sort="difficulty">By difficulty</div>
+                            </div>
+                        </div>
+                        <div class="show-tags">
+                            <h4>Taxonomies</h4>
+                            <div id="show-tags-type">
+                                <div class="select selected" hide-class="hide-days">Days</div>
+                                <div class="select" hide-class="hide-likes">Likes</div>
+                                <div class="select" hide-class="hide-difficulty">Difficulty</div>
                             </div>
                         </div>
                     </div>
@@ -116,17 +125,14 @@
             </div>
 
 
-            <div id="challenge-items">
-                <div id="nothing-text" class="hide">
-
-                </div>
+            <div id="challenge-items" class="hide-difficulty hide-likes">
             </div>
         </div>
 
     </div>
 
-    <script src="js/data.js?ver=51.0"></script>
-    <script src="js/main.js?ver=51.0"></script>
+    <script src="js/data.js?ver=51.5"></script>
+    <script src="js/main.js?ver=51.5"></script>
     <footer>
         Thank you!
     </footer>
