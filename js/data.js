@@ -528,6 +528,14 @@ function getDataSteve() {
                 content: [26],
                 likes: 7,
                 difficulty: Difficult.easy
+            },
+            {
+                title: "Share any experiences where you've been bullied or liking anime",
+                link: "https://anilist.co/activity/493773283",
+                image: "images/challenge/ryuuji.jpeg",
+                content: [19],
+                likes: 0,
+                difficulty: Difficult.easy
             }
         ]
 
