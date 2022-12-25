@@ -534,6 +534,14 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/493773283",
                 image: "images/challenge/ryuuji.jpeg",
                 content: [19],
+                likes: 3,
+                difficulty: Difficult.easy
+            },
+            {
+                title: "An anime scene that made you cry",
+                link: "https://anilist.co/activity/494247261",
+                image: "images/challenge/yourlieinapril.jpg",
+                content: [25],
                 likes: 0,
                 difficulty: Difficult.easy
             }
