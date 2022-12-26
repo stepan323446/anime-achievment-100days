@@ -109,7 +109,8 @@ function getDataSteve() {
             new Title(26, "Question not related to a specific title"),
             new Title(27, "Fate"),
             new Title(28, "Classroom of the Elite"),
-            new Title(29, "Kaguya-sama: Love is War")
+            new Title(29, "Kaguya-sama: Love is War"),
+            new Title(30, "Spice and Wolf")
         ],
 
         // Мой список
@@ -542,6 +543,14 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/494247261",
                 image: "images/challenge/yourlieinapril.jpg",
                 content: [25],
+                likes: 2,
+                difficulty: Difficult.easy
+            },
+            {
+                title: "recommend one anime that most people may not have seen",
+                link: "https://anilist.co/activity/495029393",
+                image: "images/challenge/spicexwolf.jpg",
+                content: [30],
                 likes: 0,
                 difficulty: Difficult.easy
             }
