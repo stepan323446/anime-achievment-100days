@@ -551,6 +551,14 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/495029393",
                 image: "images/challenge/spicexwolf.jpg",
                 content: [30],
+                likes: 5,
+                difficulty: Difficult.easy
+            },
+            {
+                title: "recommend one anime that most people may not have seen",
+                link: "https://anilist.co/activity/495302281",
+                image: "images/challenge/NO.jpg",
+                content: [26],
                 likes: 0,
                 difficulty: Difficult.easy
             }
