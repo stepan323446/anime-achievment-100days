@@ -427,7 +427,7 @@ function getDataSteve() {
                 title: "Favorite music in anime",
                 link: "https://anilist.co/activity/488090868",
                 image: "images/challenge/11.jpg",
-                content: [4, 23, 24, 25],
+                content: [4, 10, 24, 25],
                 likes: 8,
                 difficulty: Difficult.hard
             },
