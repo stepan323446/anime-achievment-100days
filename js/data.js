@@ -559,9 +559,17 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/495302281",
                 image: "images/challenge/NO.jpg",
                 content: [26],
+                likes: 3,
+                difficulty: Difficult.easy
+            },
+            {
+                title: "Your favorite character",
+                link: "https://anilist.co/activity/495985453",
+                image: "images/challenge/4.png",
+                content: [5],
                 likes: 0,
                 difficulty: Difficult.easy
-            }
+            },
         ]
 
     }
