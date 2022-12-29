@@ -110,7 +110,8 @@ function getDataSteve() {
             new Title(27, "Fate"),
             new Title(28, "Classroom of the Elite"),
             new Title(29, "Kaguya-sama: Love is War"),
-            new Title(30, "Spice and Wolf")
+            new Title(30, "Spice and Wolf"),
+            new Title(31, "Your Name.")
         ],
 
         // Мой список
@@ -567,8 +568,16 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/495985453",
                 image: "images/challenge/4.png",
                 content: [5],
-                likes: 0,
+                likes: 5,
                 difficulty: Difficult.easy
+            },
+            {
+                title: "What anime has your heart",
+                link: "https://anilist.co/activity/496483044",
+                image: "images/challenge/yourname.jpg",
+                content: [31],
+                likes: 0,
+                difficulty: Difficult.medium
             },
         ]
 

@@ -351,10 +351,13 @@ function othersBtn() {
             if (element.isShowing == false) {
                 // Опять высчитываем проценты
                 let proc = element.count * 100 / allTitlesCount;
-                // Создаём кнопку с теми же функциями, что и основную
-                otherTitleBtns.push(elemTextStat(element.title, "#5c5c5c", proc, function (e) {
+                if(proc != 0){
+                    // Создаём кнопку с теми же функциями, что и основную
+                    otherTitleBtns.push(elemTextStat(element.title, "#5c5c5c", proc, function (e) {
                     showItemsWithTitle(element.id);
                 }));
+                }
+                
             }
         });
         // Удалить кнопку "Others", т.к. она уже не нужна
