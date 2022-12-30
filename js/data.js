@@ -576,8 +576,16 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/496483044",
                 image: "images/challenge/yourname.jpg",
                 content: [31],
-                likes: 0,
+                likes: 3,
                 difficulty: Difficult.medium
+            },
+            {
+                title: "What's your favorite hentai anime",
+                link: "https://anilist.co/activity/497095532",
+                image: "images/challenge/NO.jpg",
+                content: [20],
+                likes: 0,
+                difficulty: Difficult.easy
             },
         ]
 
