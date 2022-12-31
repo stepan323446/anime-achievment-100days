@@ -584,6 +584,14 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/497095532",
                 image: "images/challenge/NO.jpg",
                 content: [20],
+                likes: 4,
+                difficulty: Difficult.easy
+            },
+            {
+                title: "What's your favorite yaoi anime",
+                link: "https://anilist.co/activity/497589820",
+                image: "images/challenge/NO.jpg",
+                content: [20],
                 likes: 0,
                 difficulty: Difficult.easy
             },
