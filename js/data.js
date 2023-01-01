@@ -111,7 +111,8 @@ function getDataSteve() {
             new Title(28, "Classroom of the Elite"),
             new Title(29, "Kaguya-sama: Love is War"),
             new Title(30, "Spice and Wolf"),
-            new Title(31, "Your Name.")
+            new Title(31, "Your Name."),
+            new Title(32, "I sold my life for ten thousand yen per year")
         ],
 
         // Мой список
@@ -592,6 +593,14 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/497589820",
                 image: "images/challenge/NO.jpg",
                 content: [20],
+                likes: 3,
+                difficulty: Difficult.easy
+            },
+            {
+                title: "Wish that manga would turn into an anime",
+                link: "https://anilist.co/activity/498063381",
+                image: "images/challenge/yona.webp",
+                content: [4, 9, 32],
                 likes: 0,
                 difficulty: Difficult.easy
             },
