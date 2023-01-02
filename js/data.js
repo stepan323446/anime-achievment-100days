@@ -112,7 +112,9 @@ function getDataSteve() {
             new Title(29, "Kaguya-sama: Love is War"),
             new Title(30, "Spice and Wolf"),
             new Title(31, "Your Name."),
-            new Title(32, "I sold my life for ten thousand yen per year")
+            new Title(32, "I sold my life for ten thousand yen per year"),
+            new Title(33, "Chihayafuru"),
+            new Title(34, "The Eminence in Shadow")
         ],
 
         // Мой список
@@ -557,7 +559,7 @@ function getDataSteve() {
                 difficulty: Difficult.easy
             },
             {
-                title: "recommend one anime that most people may not have seen",
+                title: "Do you share your anime interests with anyone",
                 link: "https://anilist.co/activity/495302281",
                 image: "images/challenge/NO.jpg",
                 content: [26],
@@ -601,6 +603,14 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/498063381",
                 image: "images/challenge/yona.webp",
                 content: [4, 9, 32],
+                likes: 5,
+                difficulty: Difficult.easy
+            },
+            {
+                title: "What current anime are you watching",
+                link: "https://anilist.co/activity/498553084",
+                image: "images/challenge/eminence.jpg",
+                content: [10, 33, 34],
                 likes: 0,
                 difficulty: Difficult.easy
             },
