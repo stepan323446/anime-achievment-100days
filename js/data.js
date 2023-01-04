@@ -57,7 +57,7 @@ function getDataSteve() {
             {
                 nickname: "GreenDavid004",
                 image: "images/users/david.jpg",
-                url: "https://anilist.co/user/GreenDavid004/",
+                url: "https://davidk004.github.io/100-day-challenge/",
                 status: Status.Current
             },
             {
