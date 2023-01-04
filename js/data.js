@@ -611,6 +611,14 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/498553084",
                 image: "images/challenge/eminence.jpg",
                 content: [10, 33, 34],
+                likes: 6,
+                difficulty: Difficult.easy
+            },
+            {
+                title: "Favorite anime movie",
+                link: "https://anilist.co/activity/498553084",
+                image: "images/challenge/asilentvoice.jpg",
+                content: [2, 3],
                 likes: 0,
                 difficulty: Difficult.easy
             },
