@@ -619,8 +619,17 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/498553084",
                 image: "images/challenge/asilentvoice.jpg",
                 content: [2, 3],
-                likes: 0,
+                likes: 13,
                 difficulty: Difficult.easy
+            },
+            {
+                title: "Favorite shonen series",
+                link: "https://anilist.co/activity/499536398",
+                image: "images/challenge/10.jpg",
+                content: [10],
+                likes: 0,
+                difficulty: Difficult.easy,
+                addSortTag: "shounen"
             },
         ]
 
