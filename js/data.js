@@ -627,9 +627,18 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/499536398",
                 image: "images/challenge/10.jpg",
                 content: [10],
-                likes: 0,
+                likes: 7,
                 difficulty: Difficult.easy,
                 addSortTag: "shounen"
+            },
+            {
+                title: "Favorite shojo anime",
+                link: "https://anilist.co/activity/499536398",
+                image: "images/challenge/yona.webp",
+                content: [9],
+                likes: 0,
+                difficulty: Difficult.easy,
+                addSortTag: "shoujo"
             },
         ]
 
