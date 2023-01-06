@@ -114,7 +114,8 @@ function getDataSteve() {
             new Title(31, "Your Name."),
             new Title(32, "I sold my life for ten thousand yen per year"),
             new Title(33, "Chihayafuru"),
-            new Title(34, "The Eminence in Shadow")
+            new Title(34, "The Eminence in Shadow"),
+            new Title(35, "Chihayafuru")
         ],
 
         // Мой список
@@ -633,12 +634,20 @@ function getDataSteve() {
             },
             {
                 title: "Favorite shojo anime",
-                link: "https://anilist.co/activity/499536398",
+                link: "https://anilist.co/activity/500130920",
                 image: "images/challenge/yona.webp",
                 content: [9],
-                likes: 0,
+                likes: 7,
                 difficulty: Difficult.easy,
                 addSortTag: "shoujo"
+            },
+            {
+                title: "A sports anime",
+                link: "https://anilist.co/activity/500530327",
+                image: "images/challenge/chihayafuru.webp",
+                content: [35],
+                likes: 0,
+                difficulty: Difficult.easy
             },
         ]
 
