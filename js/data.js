@@ -646,6 +646,14 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/500530327",
                 image: "images/challenge/chihayafuru.webp",
                 content: [35],
+                likes: 3,
+                difficulty: Difficult.easy
+            },
+            {
+                title: "A slice of life anime",
+                link: "https://anilist.co/activity/501047853",
+                image: "images/challenge/7.webp",
+                content: [5],
                 likes: 0,
                 difficulty: Difficult.easy
             },
