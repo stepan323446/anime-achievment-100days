@@ -115,7 +115,8 @@ function getDataSteve() {
             new Title(32, "I sold my life for ten thousand yen per year"),
             new Title(33, "Chihayafuru"),
             new Title(34, "The Eminence in Shadow"),
-            new Title(35, "Chihayafuru")
+            new Title(35, "Chihayafuru"),
+            new Title(36, "Spy x Family")
         ],
 
         // Мой список
@@ -654,6 +655,14 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/501047853",
                 image: "images/challenge/7.webp",
                 content: [5],
+                likes: 7,
+                difficulty: Difficult.easy
+            },
+            {
+                title: "A comedy anime",
+                link: "https://anilist.co/activity/501860556",
+                image: "images/challenge/spyxfamily.jpg",
+                content: [36],
                 likes: 0,
                 difficulty: Difficult.easy
             },
