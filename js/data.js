@@ -663,8 +663,17 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/501860556",
                 image: "images/challenge/spyxfamily.jpg",
                 content: [36],
-                likes: 0,
+                likes: 4,
                 difficulty: Difficult.easy
+            },
+            {
+                title: "A science fiction anime",
+                link: "https://anilist.co/activity/502411973",
+                image: "images/challenge/24.png",
+                content: [14],
+                likes: 0,
+                difficulty: Difficult.easy,
+                addSortTag: "A science fiction/mech anime"
             },
         ]
 
