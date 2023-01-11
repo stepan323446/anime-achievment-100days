@@ -671,9 +671,18 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/502411973",
                 image: "images/challenge/24.png",
                 content: [14],
-                likes: 0,
+                likes: 6,
                 difficulty: Difficult.easy,
                 addSortTag: "A science fiction/mech anime"
+            },
+            {
+                title: "An action anime",
+                link: "https://anilist.co/activity/503001728",
+                image: "images/challenge/10.jpg",
+                content: [10],
+                likes: 0,
+                difficulty: Difficult.easy,
+                addSortTag: "adventure"
             },
         ]
 
