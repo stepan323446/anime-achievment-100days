@@ -680,10 +680,18 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/503001728",
                 image: "images/challenge/10.jpg",
                 content: [10],
-                likes: 0,
+                likes: 4,
                 difficulty: Difficult.easy,
                 addSortTag: "adventure"
             },
+            {
+                title: "A fantasy anime",
+                link: "https://anilist.co/activity/503368721",
+                image: "images/challenge/slime.jpg",
+                content: [15],
+                likes: 0,
+                difficulty: Difficult.medium
+            }
         ]
 
     }
