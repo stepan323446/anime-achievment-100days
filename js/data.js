@@ -689,8 +689,16 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/503368721",
                 image: "images/challenge/slime.jpg",
                 content: [15],
-                likes: 0,
+                likes: 3,
                 difficulty: Difficult.medium
+            },
+            {
+                title: "A romance anime",
+                link: "https://anilist.co/activity/503368721",
+                image: "images/challenge/7.webp",
+                content: [5],
+                likes: 0,
+                difficulty: Difficult.easy
             }
         ]
 
