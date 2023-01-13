@@ -67,6 +67,18 @@ function getDataSteve() {
                 status: Status.Current
             },
             {
+                nickname: "BommieBomBom",
+                image: "images/users/BommieBomBom.jpg",
+                url: "https://anilist.co/user/BommieBomBom",
+                status: Status.Current
+            },
+            {
+                nickname: "sololol",
+                image: "images/users/sololol.jpg",
+                url: "https://anilist.co/user/sololol",
+                status: Status.Current
+            },
+            {
                 nickname: "Ani-Dotes",
                 image: "images/users/dotes.jpg",
                 url: "https://anidotesblog.wordpress.com/100-day-anime-challenge/",
@@ -116,7 +128,9 @@ function getDataSteve() {
             new Title(33, "Chihayafuru"),
             new Title(34, "The Eminence in Shadow"),
             new Title(35, "Chihayafuru"),
-            new Title(36, "Spy x Family")
+            new Title(36, "Spy x Family"),
+            new Title(37, "BELLE"),
+            new Title(38, "Snow White with the Red Hair")
         ],
 
         // Мой список
@@ -694,9 +708,17 @@ function getDataSteve() {
             },
             {
                 title: "A romance anime",
-                link: "https://anilist.co/activity/503368721",
+                link: "https://anilist.co/activity/503922761",
                 image: "images/challenge/7.webp",
                 content: [5],
+                likes: 9,
+                difficulty: Difficult.easy
+            },
+            {
+                title: "An overrated series",
+                link: "https://anilist.co/activity/504389735",
+                image: "images/challenge/redhair.jpg",
+                content: [37, 38],
                 likes: 0,
                 difficulty: Difficult.easy
             }
