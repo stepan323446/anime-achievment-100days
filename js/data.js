@@ -130,7 +130,8 @@ function getDataSteve() {
             new Title(35, "Chihayafuru"),
             new Title(36, "Spy x Family"),
             new Title(37, "BELLE"),
-            new Title(38, "Snow White with the Red Hair")
+            new Title(38, "Snow White with the Red Hair"),
+            new Title(39, "The Rising of the Shield Hero")
         ],
 
         // Мой список
@@ -719,6 +720,14 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/504389735",
                 image: "images/challenge/redhair.jpg",
                 content: [37, 38],
+                likes: 4,
+                difficulty: Difficult.easy
+            },
+            {
+                title: "An underrated series",
+                link: "https://anilist.co/activity/504810979",
+                image: "images/challenge/22.jpg",
+                content: [0, 39],
                 likes: 0,
                 difficulty: Difficult.easy
             }
