@@ -728,6 +728,14 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/504810979",
                 image: "images/challenge/22.jpg",
                 content: [0, 39],
+                likes: 7,
+                difficulty: Difficult.easy
+            },
+            {
+                title: "That series that got you into anime",
+                link: "https://anilist.co/activity/505267931",
+                image: "images/challenge/darlinginthefraxx.jpg",
+                content: [21],
                 likes: 0,
                 difficulty: Difficult.easy
             }
