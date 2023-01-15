@@ -545,14 +545,14 @@ function getDataSteve() {
             },
             {
                 title: "Share any experiences where you've been bullied or liking anime",
-                link: "https://anilist.co/activity/492971116",
+                link: "https://anilist.co/activity/493447812",
                 image: "images/anilist/bulling.jpg",
                 content: [26],
                 likes: 7,
                 difficulty: Difficult.easy
             },
             {
-                title: "Share any experiences where you've been bullied or liking anime",
+                title: "anime character you feel you are most like (or wish you were like)",
                 link: "https://anilist.co/activity/493773283",
                 image: "images/challenge/ryuuji.jpeg",
                 content: [19],
