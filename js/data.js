@@ -736,8 +736,16 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/505267931",
                 image: "images/challenge/darlinginthefraxx.jpg",
                 content: [21],
-                likes: 0,
+                likes: 7,
                 difficulty: Difficult.easy
+            },
+            {
+                title: "Favorite friendship",
+                link: "https://anilist.co/activity/505970517",
+                image: "images/challenge/22.jpg",
+                content: [0],
+                likes: 0,
+                difficulty: Difficult.hard
             }
         ]
 
