@@ -744,8 +744,16 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/505970517",
                 image: "images/challenge/22.jpg",
                 content: [0],
-                likes: 0,
+                likes: 8,
                 difficulty: Difficult.hard
+            },
+            {
+                title: "Favorite bromance",
+                link: "https://anilist.co/activity/506455700",
+                image: "images/challenge/NO.jpg",
+                content: [20],
+                likes: 0,
+                difficulty: Difficult.easy
             }
         ]
 
