@@ -752,8 +752,16 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/506455700",
                 image: "images/challenge/NO.jpg",
                 content: [20],
-                likes: 0,
+                likes: 4,
                 difficulty: Difficult.easy
+            },
+            {
+                title: "Favorite rivalry",
+                link: "https://anilist.co/activity/506887158",
+                image: "images/anilist/makishima.jpg",
+                content: [14],
+                likes: 0,
+                difficulty: Difficult.medium
             }
         ]
 
