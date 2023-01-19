@@ -760,6 +760,14 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/506887158",
                 image: "images/anilist/makishima.jpg",
                 content: [14],
+                likes: 9,
+                difficulty: Difficult.medium
+            },
+            {
+                title: "Favorite team",
+                link: "https://anilist.co/activity/507425414",
+                image: "images/challenge/27.jpg",
+                content: [18],
                 likes: 0,
                 difficulty: Difficult.medium
             }
