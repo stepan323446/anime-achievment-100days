@@ -768,6 +768,14 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/507425414",
                 image: "images/challenge/27.jpg",
                 content: [18],
+                likes: 4,
+                difficulty: Difficult.medium
+            },
+            {
+                title: "Favorite quote",
+                link: "https://anilist.co/activity/507766070",
+                image: "images/challenge/spicexwolf.jpg",
+                content: [0, 30],
                 likes: 0,
                 difficulty: Difficult.medium
             }
