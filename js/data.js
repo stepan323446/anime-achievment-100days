@@ -784,8 +784,16 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/508111705",
                 image: "images/challenge/yourname.jpg",
                 content: [31],
-                likes: 0,
+                likes: 5,
                 difficulty: Difficult.medium
+            },
+            {
+                title: "Favorite epizode",
+                link: "https://anilist.co/activity/508872500",
+                image: "images/challenge/22.jpg",
+                content: [0],
+                likes: 0,
+                difficulty: Difficult.easy
             }
         ]
 
