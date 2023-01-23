@@ -131,7 +131,8 @@ function getDataSteve() {
             new Title(36, "Spy x Family"),
             new Title(37, "BELLE"),
             new Title(38, "Snow White with the Red Hair"),
-            new Title(39, "The Rising of the Shield Hero")
+            new Title(39, "The Rising of the Shield Hero"),
+            new Title(40, "Beyond the Boundary")
         ],
 
         // Мой список
@@ -792,6 +793,14 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/508872500",
                 image: "images/challenge/22.jpg",
                 content: [0],
+                likes: 6,
+                difficulty: Difficult.easy
+            },
+            {
+                title: "Most annoying anime character",
+                link: "https://anilist.co/activity/509380859",
+                image: "images/challenge/mirai.png",
+                content: [40],
                 likes: 0,
                 difficulty: Difficult.easy
             }
