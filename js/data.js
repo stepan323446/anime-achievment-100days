@@ -801,6 +801,14 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/509380859",
                 image: "images/challenge/mirai.png",
                 content: [40],
+                likes: 6,
+                difficulty: Difficult.easy
+            },
+            {
+                title: "An ecchi picture from your favorite series",
+                link: "https://anilist.co/activity/509842804",
+                image: "images/challenge/kaguya.jpg",
+                content: [29],
                 likes: 0,
                 difficulty: Difficult.easy
             }
