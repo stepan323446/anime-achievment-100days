@@ -138,7 +138,8 @@ function getDataSteve() {
             new Title(37, "BELLE"),
             new Title(38, "Snow White with the Red Hair"),
             new Title(39, "The Rising of the Shield Hero"),
-            new Title(40, "Beyond the Boundary")
+            new Title(40, "Beyond the Boundary"),
+            new Title(41, "Genshin")
         ],
 
         // Мой список
@@ -815,6 +816,14 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/509842804",
                 image: "images/challenge/kaguya.jpg",
                 content: [29],
+                likes: 5,
+                difficulty: Difficult.easy
+            },
+            {
+                title: "Most recent anime wallpaper",
+                link: "https://anilist.co/activity/510317799",
+                image: "images/challenge/genshin.jpg",
+                content: [41],
                 likes: 0,
                 difficulty: Difficult.easy
             }
