@@ -79,6 +79,12 @@ function getDataSteve() {
                 status: Status.Current
             },
             {
+                nickname: "RossyNarukami",
+                image: "images/users/RossyHarukami.png",
+                url: "https://anilist.co/user/RossyNarukami/",
+                status: Status.Current
+            },
+            {
                 nickname: "Ani-Dotes",
                 image: "images/users/dotes.jpg",
                 url: "https://anidotesblog.wordpress.com/100-day-anime-challenge/",
