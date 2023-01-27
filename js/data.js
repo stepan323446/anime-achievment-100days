@@ -824,6 +824,14 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/510317799",
                 image: "images/challenge/genshin.jpg",
                 content: [41],
+                likes: 6,
+                difficulty: Difficult.easy
+            },
+            {
+                title: "Favorite shoujo anime",
+                link: "https://anilist.co/activity/510831874",
+                image: "images/challenge/yona.webp",
+                content: [9],
                 likes: 0,
                 difficulty: Difficult.easy
             }
