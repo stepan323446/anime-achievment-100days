@@ -832,6 +832,14 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/510831874",
                 image: "images/challenge/yona.webp",
                 content: [9],
+                likes: 9,
+                difficulty: Difficult.easy
+            },
+            {
+                title: "Best yandere character",
+                link: "https://anilist.co/activity/511130463",
+                image: "images/challenge/kurumi.jpg",
+                content: [6],
                 likes: 0,
                 difficulty: Difficult.easy
             }
