@@ -85,6 +85,18 @@ function getDataSteve() {
                 status: Status.Current
             },
             {
+                nickname: "stephonee",
+                image: "images/users/stephonee.png",
+                url: "https://anilist.co/user/stephonee",
+                status: Status.Current
+            },
+            {
+                nickname: "bokut0",
+                image: "images/users/bokut0.png",
+                url: "https://anilist.co/user/bokut0",
+                status: Status.Current
+            },
+            {
                 nickname: "Ani-Dotes",
                 image: "images/users/dotes.jpg",
                 url: "https://anidotesblog.wordpress.com/100-day-anime-challenge/",
@@ -796,7 +808,7 @@ function getDataSteve() {
                 difficulty: Difficult.medium
             },
             {
-                title: "Favorite epizode",
+                title: "Favorite episode",
                 link: "https://anilist.co/activity/508872500",
                 image: "images/challenge/22.jpg",
                 content: [0],
