@@ -858,6 +858,14 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/511130463",
                 image: "images/challenge/kurumi.jpg",
                 content: [6],
+                likes: 8,
+                difficulty: Difficult.easy
+            },
+            {
+                title: "Favorite anime hero",
+                link: "https://anilist.co/activity/511478291",
+                image: "images/challenge/rimuru.png",
+                content: [15],
                 likes: 0,
                 difficulty: Difficult.easy
             }
