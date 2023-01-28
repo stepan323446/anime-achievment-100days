@@ -97,6 +97,12 @@ function getDataSteve() {
                 status: Status.Current
             },
             {
+                nickname: "keiikeii",
+                image: "images/users/keiikeii.png",
+                url: "https://anilist.co/user/keiikeii/",
+                status: Status.Current
+            },
+            {
                 nickname: "Ani-Dotes",
                 image: "images/users/dotes.jpg",
                 url: "https://anidotesblog.wordpress.com/100-day-anime-challenge/",
