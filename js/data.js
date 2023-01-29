@@ -866,8 +866,16 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/511478291",
                 image: "images/challenge/rimuru.png",
                 content: [15],
-                likes: 0,
+                likes: 3,
                 difficulty: Difficult.easy
+            },
+            {
+                title: "Favorite school uniform",
+                link: "https://anilist.co/activity/511478291",
+                image: "images/challenge/classroom.webp",
+                content: [28],
+                likes: 0,
+                difficulty: Difficult.hard
             }
         ]
 
