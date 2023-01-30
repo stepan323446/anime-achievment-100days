@@ -871,11 +871,19 @@ function getDataSteve() {
             },
             {
                 title: "Favorite school uniform",
-                link: "https://anilist.co/activity/511478291",
+                link: "https://anilist.co/activity/512115945",
                 image: "images/challenge/classroom.webp",
                 content: [28],
-                likes: 0,
+                likes: 7,
                 difficulty: Difficult.hard
+            },
+            {
+                title: "Favorite anime opening theme song",
+                link: "https://anilist.co/activity/512667318",
+                image: "images/challenge/domestic.jpg",
+                content: [24],
+                likes: 0,
+                difficulty: Difficult.easy
             }
         ]
 
