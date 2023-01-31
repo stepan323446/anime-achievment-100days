@@ -882,8 +882,16 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/512667318",
                 image: "images/challenge/domestic.jpg",
                 content: [24],
-                likes: 0,
+                likes: 11,
                 difficulty: Difficult.easy
+            },
+            {
+                title: "Picture of a character in a swimsuit",
+                link: "https://anilist.co/activity/513187019",
+                image: "images/challenge/ami.png",
+                content: [19],
+                likes: 0,
+                difficulty: Difficult.hard
             }
         ]
 
