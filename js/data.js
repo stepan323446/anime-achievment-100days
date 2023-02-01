@@ -887,7 +887,7 @@ function getDataSteve() {
             },
             {
                 title: "Picture of a character in a swimsuit",
-                link: "https://anilist.co/activity/513187019",
+                link: "https://anilist.co/activity/513236437",
                 image: "images/challenge/ami.png",
                 content: [19],
                 likes: 0,
