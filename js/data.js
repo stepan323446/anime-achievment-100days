@@ -79,18 +79,6 @@ function getDataSteve() {
                 status: Status.Current
             },
             {
-                nickname: "RossyNarukami",
-                image: "images/users/RossyHarukami.png",
-                url: "https://anilist.co/user/RossyNarukami/",
-                status: Status.Current
-            },
-            {
-                nickname: "stephonee",
-                image: "images/users/stephonee.png",
-                url: "https://anilist.co/user/stephonee",
-                status: Status.Current
-            },
-            {
                 nickname: "bokut0",
                 image: "images/users/bokut0.png",
                 url: "https://anilist.co/user/bokut0",
@@ -101,6 +89,18 @@ function getDataSteve() {
                 image: "images/users/keiikeii.png",
                 url: "https://anilist.co/user/keiikeii/",
                 status: Status.Current
+            },
+            {
+                nickname: "stephonee",
+                image: "images/users/stephonee.png",
+                url: "https://anilist.co/user/stephonee",
+                status: Status.Current
+            },
+            {
+                nickname: "RossyNarukami",
+                image: "images/users/RossyHarukami.png",
+                url: "https://anilist.co/activity/507121677",
+                status: Status.Failed
             },
             {
                 nickname: "Ani-Dotes",
@@ -890,8 +890,16 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/513236437",
                 image: "images/challenge/ami.png",
                 content: [19],
-                likes: 0,
+                likes: 5,
                 difficulty: Difficult.hard
+            },
+            {
+                title: "Favorite attack a character has used",
+                link: "https://anilist.co/activity/513410935",
+                image: "images/challenge/19.jpg",
+                content: [16],
+                likes: 0,
+                difficulty: Difficult.easy
             }
         ]
 
