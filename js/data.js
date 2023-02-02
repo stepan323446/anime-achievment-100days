@@ -898,8 +898,16 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/513410935",
                 image: "images/challenge/19.jpg",
                 content: [16],
-                likes: 0,
+                likes: 10,
                 difficulty: Difficult.easy
+            },
+            {
+                title: "Favorite anime of high school character",
+                link: "https://anilist.co/activity/513849168",
+                image: "images/challenge/kaguya.jpg",
+                content: [29],
+                likes: 0,
+                difficulty: Difficult.medium
             }
         ]
 
