@@ -906,8 +906,17 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/514094929",
                 image: "images/challenge/kaguya.jpg",
                 content: [29],
-                likes: 0,
+                likes: 6,
                 difficulty: Difficult.medium
+            },
+            {
+                title: "Hottest anime girl",
+                link: "https://anilist.co/activity/514512221",
+                image: "images/challenge/raphtalia.png",
+                content: [39],
+                likes: 0,
+                difficulty: Difficult.hard,
+                addSortTag: "Hottest anime guy"
             }
         ]
 
