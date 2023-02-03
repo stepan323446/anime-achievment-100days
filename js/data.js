@@ -903,7 +903,7 @@ function getDataSteve() {
             },
             {
                 title: "Favorite anime of high school character",
-                link: "https://anilist.co/activity/513849168",
+                link: "https://anilist.co/activity/514094929",
                 image: "images/challenge/kaguya.jpg",
                 content: [29],
                 likes: 0,
