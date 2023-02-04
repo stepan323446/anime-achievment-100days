@@ -97,6 +97,12 @@ function getDataSteve() {
                 status: Status.Current
             },
             {
+                nickname: "IamVoid",
+                image: "images/users/IamVoid.png",
+                url: "https://anilist.co/user/IamVoid/",
+                status: Status.Current
+            },
+            {
                 nickname: "RossyNarukami",
                 image: "images/users/RossyHarukami.png",
                 url: "https://anilist.co/activity/507121677",
@@ -631,7 +637,7 @@ function getDataSteve() {
                 image: "images/challenge/NO.jpg",
                 content: [20],
                 likes: 4,
-                difficulty: Difficult.easy
+                difficulty: Difficult.none
             },
             {
                 title: "What's your favorite yaoi anime",
@@ -639,7 +645,7 @@ function getDataSteve() {
                 image: "images/challenge/NO.jpg",
                 content: [20],
                 likes: 3,
-                difficulty: Difficult.easy
+                difficulty: Difficult.none
             },
             {
                 title: "Wish that manga would turn into an anime",
@@ -779,7 +785,7 @@ function getDataSteve() {
                 image: "images/challenge/NO.jpg",
                 content: [20],
                 likes: 4,
-                difficulty: Difficult.easy
+                difficulty: Difficult.none
             },
             {
                 title: "Favorite rivalry",
