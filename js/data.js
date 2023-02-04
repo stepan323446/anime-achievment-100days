@@ -914,9 +914,17 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/514512221",
                 image: "images/challenge/raphtalia.png",
                 content: [39],
-                likes: 0,
+                likes: 3,
                 difficulty: Difficult.hard,
                 addSortTag: "Hottest anime guy"
+            },
+            {
+                title: "Favorite nendoriod",
+                link: "https://anilist.co/activity/514828310",
+                image: "images/challenge/megumin.png",
+                content: [7],
+                likes: 0,
+                difficulty: Difficult.medium
             }
         ]
 
