@@ -49,6 +49,12 @@ function getDataSteve() {
                 status: Status.Complete
             },
             {
+                nickname: "F41NZ",
+                image: "images/users/F41NZ.jpg",
+                url: "https://anilist.co/activity/515483844",
+                status: Status.Complete
+            },
+            {
                 nickname: "CH1KIM0N1",
                 image: "images/users/CH1KIM0N1.png",
                 url: "https://ch1kim0n1.github.io/100DayChallenge_ch1kim0n1.github.io/",
@@ -61,45 +67,39 @@ function getDataSteve() {
                 status: Status.Current
             },
             {
-                nickname: "F41NZ",
-                image: "images/users/F41NZ.jpg",
-                url: "https://anilist.co/user/F41NZ/",
-                status: Status.Current
-            },
-            {
                 nickname: "BommieBomBom",
                 image: "images/users/BommieBomBom.jpg",
-                url: "https://anilist.co/user/BommieBomBom",
+                url: "https://anilist.co/activity/511724013",
                 status: Status.Current
             },
             {
                 nickname: "sololol",
                 image: "images/users/sololol.jpg",
-                url: "https://anilist.co/user/sololol",
+                url: "https://anilist.co/activity/507360023",
                 status: Status.Current
             },
             {
                 nickname: "bokut0",
                 image: "images/users/bokut0.png",
-                url: "https://anilist.co/user/bokut0",
+                url: "https://anilist.co/activity/505386106",
                 status: Status.Current
             },
             {
-                nickname: "keiikeii",
+                nickname: "keiwi",
                 image: "images/users/keiikeii.png",
-                url: "https://anilist.co/user/keiikeii/",
+                url: "https://anilist.co/activity/501141302",
                 status: Status.Current
             },
             {
                 nickname: "stephonee",
                 image: "images/users/stephonee.png",
-                url: "https://anilist.co/user/stephonee",
+                url: "https://anilist.co/activity/505974349",
                 status: Status.Current
             },
             {
                 nickname: "IamVoid",
                 image: "images/users/IamVoid.png",
-                url: "https://anilist.co/user/IamVoid/",
+                url: "https://anilist.co/activity/507881713",
                 status: Status.Current
             },
             {
