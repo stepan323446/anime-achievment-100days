@@ -888,7 +888,7 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/512667318",
                 image: "images/challenge/domestic.jpg",
                 content: [24],
-                likes: 11,
+                likes: 12,
                 difficulty: Difficult.easy
             },
             {
