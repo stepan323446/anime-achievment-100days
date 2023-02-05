@@ -929,8 +929,16 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/514828310",
                 image: "images/challenge/megumin.png",
                 content: [7],
-                likes: 0,
+                likes: 6,
                 difficulty: Difficult.medium
+            },
+            {
+                title: "Favorite manga",
+                link: "https://anilist.co/activity/515482352",
+                image: "images/challenge/horimiya.jpg",
+                content: [5, 9],
+                likes: 0,
+                difficulty: Difficult.easy
             }
         ]
 
