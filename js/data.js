@@ -103,6 +103,12 @@ function getDataSteve() {
                 status: Status.Current
             },
             {
+                nickname: "adrx24",
+                image: "images/users/andrx24.png",
+                url: "https://anilist.co/activity/515820716",
+                status: Status.Current
+            },
+            {
                 nickname: "RossyNarukami",
                 image: "images/users/RossyHarukami.png",
                 url: "https://anilist.co/activity/507121677",
@@ -937,8 +943,16 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/515482352",
                 image: "images/challenge/horimiya.jpg",
                 content: [5, 9],
-                likes: 0,
+                likes: 4,
                 difficulty: Difficult.easy
+            },
+            {
+                title: "Anime character frame in your room",
+                link: "https://anilist.co/activity/515867639",
+                image: "images/challenge/NO.jpg",
+                content: [20],
+                likes: 0,
+                difficulty: Difficult.none
             }
         ]
 
