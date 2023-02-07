@@ -951,8 +951,16 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/515867639",
                 image: "images/challenge/NO.jpg",
                 content: [20],
-                likes: 0,
+                likes: 5,
                 difficulty: Difficult.none
+            },
+            {
+                title: "An anime character you want to see in a nightmare",
+                link: "https://anilist.co/activity/516199362",
+                image: "images/challenge/caster.png",
+                content: [27],
+                likes: 0,
+                difficulty: Difficult.medium
             }
         ]
 
