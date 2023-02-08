@@ -959,6 +959,14 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/516199362",
                 image: "images/challenge/caster.png",
                 content: [27],
+                likes: 4,
+                difficulty: Difficult.medium
+            },
+            {
+                title: "Male character's best kimono",
+                link: "https://anilist.co/activity/516654226",
+                image: "images/challenge/souei.png",
+                content: [15],
                 likes: 0,
                 difficulty: Difficult.medium
             }
