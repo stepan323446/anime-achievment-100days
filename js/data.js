@@ -967,6 +967,14 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/516654226",
                 image: "images/challenge/souei.png",
                 content: [15],
+                likes: 4,
+                difficulty: Difficult.medium
+            },
+            {
+                title: "Favorite character's best yukata",
+                link: "https://anilist.co/activity/517222943",
+                image: "images/challenge/18.png",
+                content: [15],
                 likes: 0,
                 difficulty: Difficult.medium
             }
