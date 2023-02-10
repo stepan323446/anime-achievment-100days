@@ -705,7 +705,7 @@ function getDataSteve() {
                 title: "A sports anime",
                 link: "https://anilist.co/activity/500530327",
                 image: "images/challenge/chihayafuru.webp",
-                content: [35],
+                content: [33],
                 likes: 3,
                 difficulty: Difficult.easy
             },
