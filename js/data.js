@@ -109,6 +109,12 @@ function getDataSteve() {
                 status: Status.Current
             },
             {
+                nickname: "DarkraiBR",
+                image: "images/users/DarkraiBR.png",
+                url: "https://anilist.co/activity/517360202",
+                status: Status.Current
+            },
+            {
                 nickname: "RossyNarukami",
                 image: "images/users/RossyHarukami.png",
                 url: "https://anilist.co/activity/507121677",
