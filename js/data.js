@@ -67,18 +67,6 @@ function getDataSteve() {
                 status: Status.Current
             },
             {
-                nickname: "BommieBomBom",
-                image: "images/users/BommieBomBom.jpg",
-                url: "https://anilist.co/activity/511724013",
-                status: Status.Current
-            },
-            {
-                nickname: "sololol",
-                image: "images/users/sololol.jpg",
-                url: "https://anilist.co/activity/507360023",
-                status: Status.Current
-            },
-            {
                 nickname: "bokut0",
                 image: "images/users/bokut0.png",
                 url: "https://anilist.co/activity/505386106",
@@ -113,6 +101,18 @@ function getDataSteve() {
                 image: "images/users/DarkraiBR.png",
                 url: "https://anilist.co/activity/517360202",
                 status: Status.Current
+            },
+            {
+                nickname: "BommieBomBom",
+                image: "images/users/BommieBomBom.jpg",
+                url: "https://anilist.co/activity/511724013",
+                status: Status.Failed
+            },
+            {
+                nickname: "sololol",
+                image: "images/users/sololol.jpg",
+                url: "https://anilist.co/activity/507360023",
+                status: Status.Failed
             },
             {
                 nickname: "RossyNarukami",
