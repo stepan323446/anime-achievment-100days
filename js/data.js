@@ -175,7 +175,8 @@ function getDataSteve() {
             new Title(38, "Snow White with the Red Hair"),
             new Title(39, "The Rising of the Shield Hero"),
             new Title(40, "Beyond the Boundary"),
-            new Title(41, "Genshin")
+            new Title(41, "Genshin"),
+            new Title(42, "Grimgar of Fantasy and Ash")
         ],
 
         // Мой список
@@ -981,8 +982,16 @@ function getDataSteve() {
                 link: "https://anilist.co/activity/517222943",
                 image: "images/challenge/18.png",
                 content: [15],
-                likes: 0,
+                likes: 7,
                 difficulty: Difficult.medium
+            },
+            {
+                title: "Confess your love for anime character",
+                link: "https://anilist.co/activity/517516409",
+                image: "images/challenge/mary.png",
+                content: [42],
+                likes: 0,
+                difficulty: Difficult.hard
             }
         ]
 
