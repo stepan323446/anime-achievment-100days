@@ -58,13 +58,13 @@ function getDataSteve() {
                 nickname: "CH1KIM0N1",
                 image: "images/users/CH1KIM0N1.png",
                 url: "https://ch1kim0n1.github.io/100DayChallenge_ch1kim0n1.github.io/",
-                status: Status.Current
+                status: Status.Complete
             },
             {
                 nickname: "GreenDavid004",
                 image: "images/users/david.jpg",
                 url: "https://davidk004.github.io/100-day-challenge/",
-                status: Status.Current
+                status: Status.Complete
             },
             {
                 nickname: "bokut0",
