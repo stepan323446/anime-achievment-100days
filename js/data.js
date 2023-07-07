@@ -67,39 +67,39 @@ function getDataSteve() {
                 status: Status.Complete
             },
             {
-                nickname: "bokut0",
-                image: "images/users/bokut0.png",
-                url: "https://anilist.co/activity/505386106",
-                status: Status.Current
-            },
-            {
                 nickname: "keiwi",
                 image: "images/users/keiikeii.png",
-                url: "https://anilist.co/activity/501141302",
-                status: Status.Current
+                url: "https://anilist.co/activity/551290194",
+                status: Status.Complete
             },
             {
                 nickname: "stephonee",
                 image: "images/users/stephonee.png",
-                url: "https://anilist.co/activity/505974349",
-                status: Status.Current
+                url: "https://anilist.co/activity/553288637",
+                status: Status.Complete
             },
             {
                 nickname: "IamVoid",
                 image: "images/users/IamVoid.png",
-                url: "https://anilist.co/activity/507881713",
-                status: Status.Current
+                url: "https://anilist.co/activity/555049100",
+                status: Status.Complete
             },
             {
                 nickname: "adrx24",
                 image: "images/users/andrx24.png",
-                url: "https://anilist.co/activity/515820716",
-                status: Status.Current
+                url: "https://anilist.co/activity/587408641",
+                status: Status.Complete
             },
             {
                 nickname: "DarkraiBR",
                 image: "images/users/DarkraiBR.png",
-                url: "https://anilist.co/activity/517360202",
+                url: "https://anilist.co/activity/568224445",
+                status: Status.Complete
+            },
+            {
+                nickname: "bokut0",
+                image: "images/users/bokut0.png",
+                url: "https://anilist.co/activity/505386106",
                 status: Status.Current
             },
             {
